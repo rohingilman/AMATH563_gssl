@@ -1,2 +1,2 @@
-# AMATH563_gls
-AMATH 563 GLS Project
+# AMATH563_gssl
+AMATH 563 GSSL Project
