@@ -21,6 +21,8 @@
 \usepackage{setspace}
 \usepackage{empheq}
 
+\usepackage{macros}
+
 
 \title{GSSL Project Report (should change this)}
 
@@ -33,12 +35,11 @@
 \doublespacing
 \begin{document}
 
-\maketitle
-
 \begin{abstract}
-To be written last
+	To be written last
 \end{abstract}
 
+\maketitle
 
 \section{Introduction} 
 Graphical semi-supervised learning (GSSL) is a prominent field of research in machine learning, as it serves as a powerful technique for dealing with classification and clustering problems in which only a small subset of the data is labeled. Incorporating kernel methods into GSSL has emerged as a popular approach in machine learning due to its ability to leverage both labeled and unlabeled data, resulting in improved accuracy and robustness. In kernel methods, the unlabeled data is used to construct a similarity graph, where each node represents an instance and the edges indicate the similarity between them. The graph is then used to propagate the labels from the labeled data to the unlabeled data, resulting in a complete labeling of the data set. As a result, graphical semi-supervised learning using kernel methods is a promising approach for tackling real-world problems in various domains such as image recognition, natural language processing, and bioinformatics.
