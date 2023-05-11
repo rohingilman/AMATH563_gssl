@@ -23,6 +23,8 @@
 
 \usepackage{macros}
 
+\newcommand{\iid}{\overset{\mathrm{iid}}{\sim}}
+
 
 \title{GSSL Project Report (should change this)}
 
@@ -42,34 +44,35 @@
 \maketitle
 
 \section{Introduction} 
-Graphical semi-supervised learning (GSSL) is a prominent field of research in machine learning, as it serves as a powerful technique for dealing with classification and clustering problems in which only a small subset of the data is labeled. Incorporating kernel methods into GSSL has emerged as a popular approach in machine learning due to its ability to leverage both labeled and unlabeled data, resulting in improved accuracy and robustness. In kernel methods, the unlabeled data is used to construct a similarity graph, where each node represents an instance and the edges indicate the similarity between them. The graph is then used to propagate the labels from the labeled data to the unlabeled data, resulting in a complete labeling of the data set. As a result, graphical semi-supervised learning using kernel methods is a promising approach for tackling real-world problems in various domains such as image recognition, natural language processing, and bioinformatics.
+Graphical semi-supervised learning (GSSL) is a prominent field of research in machine learning as it serves as a powerful technique for dealing with classification problems in which only a small subset of the data is labeled. \textcolor{red}{Incorporating kernel methods into GSSL has emerged as a popular approach in machine learning due to its ability to leverage both labeled and unlabeled data, resulting in improved accuracy and robustness. In kernel methods, the unlabeled data is used to construct a similarity graph, where each node represents an instance and the edges indicate the similarity between them. The graph is then used to propagate the labels from the labeled data to the unlabeled data, resulting in a complete labeling of the data set.} As a result, graphical semi-supervised learning using kernel methods is a promising approach for tackling real-world problems in various domains such as image recognition, natural language processing, and bioinformatics.
 
 \section{Theoretical Background}
 
 \subsection{Types of Graphs}
 \subsubsection{Proximity Graphs}
-Given a set of $n$ points $\{x_1, x_2, \dots, x_n\}$ in a metric space, a proximity graph is a graph, $G = (V, E)$, where $V = \{v_1, v_2, \dots, v_n\}$ is a set of vertices representing the points, and $E$ is a set of edges connecting pairs of vertices that are ``close" to each other according to some proximity measure.
+Given a set of $n$ points $\{x_1, x_2, \dots, x_n\}$ in a metric space, a proximity graph is a graph, $G = (V, W)$, where $V = \{v_1, v_2, \dots, v_n\}$ is a set of vertices representing the points, and $W$ is an adjacency matrix representing the edges connecting pairs of vertices that are ``close" to each other, according to some measure of proximity.
 
-To represent the proximity graph $G$ as a weight matrix, we can define a kernel function $K: X \times X \rightarrow \mathbb{R}$ that maps pairs of points in $X$ to a real number, which captures the similarity or dissimilarity between the points. 
+To represent the proximity graph $G$ using a weight matrix, we define a kernel function $K\colon X \times X \rightarrow \mathbb{R}$ that maps pairs of points in $X$ to a real number, which captures the similarity between the points. 
 
-The weight matrix, $W$, corresponding to the proximity graph $G$ is then defined as $W_{i,j} = K(x_i,x_j)$, where $W(i,j)$ is a matrix where the nonzero entries correspond to the similarity between pairs of points that are connected by an edge in $G$. Diagonal entries, $W_{i,i}$, correspond to the ``self-similarity" of each point $x_i$, and the off-diagonal entries, $W_{i,j}$, correspond to the similarity between pairs of points $x_i$ and $x_j$. By using a kernel function to define the weights of the edges, proximity graphs can capture nonlinear relationships between the data points, making them suitable for a wide range of applications in machine learning and data analysis.
-\subsubsection{K-Nearest Neighbor (K-NN)}
-K-Nearest Neighbor (K-NN) graphs are a type of proximity graph that is defined based on the k-nearest neighbors of each point in a given data set. Given a set of $n$ points $\{x_1, x_2, ..., x_n\}$ in a metric space, the K-NN graph $G_k = (V, E)$ is constructed as follows: for each point $x_i$, its $k$-nearest neighbors are found according to some distance metric, and edges are added between $x_i$ and each of its $k$-nearest neighbors. In other words, $x_i$ is connected to the $k$ points that are closest to it in the data set.
+The weight matrix, $W$, corresponding to the proximity graph $G$ is then defined by $W_{i,j} = K(x_i,x_j)$. The nonzero entries correspond to the similarity between pairs of points that are connected by an edge in $G$. Diagonal entries, $W_{i,i}$, correspond to the ``self-similarity" of each point $x_i$, and the off-diagonal entries, $W_{i,j}$, correspond to the similarity between pairs of points $x_i$ and $x_j$. By using a kernel function to define the weights of the edges, proximity graphs can capture underlying geometric relationships between the data points, making them suitable for a wide range of applications in machine learning and data analysis.
+\subsubsection{K-Nearest Neighbor}
+K-Nearest Neighbor (K-NN) graphs are a type of proximity graph for which edge weights are determined exclusively by the nearest neighbors of a given vertex. Given a set of $n$ vertices $V = \{x_1, x_2, ..., x_n\}$ in a metric space, the K-NN graph $G_k = (V, W)$ is constructed as follows: for each point $x_i$, its $k$-nearest neighbors are found according to some distance metric, and edges of weight $1$ are added between $x_i$ and each of its $k$-nearest neighbors. In other words, $x_i$ is adjacent to the $k$ vertices that are closest to it in the data set.
 
-K-NN graphs have several advantages over other types of proximity graphs, as they capture the local structure of the data more accurately, because they only connect points that are truly close to each other, while excluding points that are far away, making the weight matrix, $W$, sparse. Moreover, K-NN graphs are easy to construct and can be used in a wide range of applications, such as clustering, classification, and anomaly detection.
+K-NN graphs have several advantages over other types of proximity graphs. One of these advantages is that on average, vertices have relatively low degree, so the weight matrix $W$ is often sparse. This increases the performance of graphical methods. Moreover, K-NN graphs are easy to construct and can be used in a wide range of applications, such as clustering, classification, and anomaly detection.
 
 \subsection{Graph Laplacian}
-Given a graph $G = (V, E)$, we can define a graph Laplacian $L$ as a matrix that captures the pairwise relationships between data points on the graph. Specifically, we can construct the unnormalized graph Laplacian $L$ as follows:
+Given a graph $G = (V, W)$, we can define a graph Laplacian $L$ as a matrix that captures the pairwise relationships between data points on the graph. Specifically, we can construct the unnormalized graph Laplacian $L$ as follows:
 $$ L = D - W, $$
-where $D$ is the diagonal degree matrix, with $D_{ij} = \sum_{k} W_{ik}$ for $i=j$ and $D_{ij} = 0$ for $i\neq j$, and $W$ is the weight matrix. We note that if $G$ has $M$-connected components then $\mathrm{Nullity}(L)=M$. Thus, we simply need to count the number of zero eigenvalues of $L$ to determine the number of clusters in the data.
+where $D$ is the diagonal degree matrix. The degree of a vertex is the sum of the weights of the edges adjacent to the vertex. We note that if $G$ has $M$ connected components, then $\mathrm{Null}(L)=M$. Thus, we simply need to determine the degree of the zero eigenvalue of $L$ to determine the number of clusters in the data.
 
 One common variant of the graph Laplacian is the normalized Laplacian, which is defined as:
 $$ L_{\text{sym}} = D^{-1/2} L D^{-1/2}. $$
 The normalized Laplacian satisfies the important property that its eigenvalues are in the range $[0, 2]$, which allows for efficient algorithms and analysis. 
-
+\begin{comment}
 In GSSL, we can use the Laplacian to propagate labels from a small set of labeled data points to the entire graph, by solving the following optimization problem:
 $$ \min_f \sum_i L_{ii} (f_i - y_i)^2 + \lambda \sum_{i,j} W_{ij} (f_i - f_j)^2, $$
 where $y_i$ is the label for the $i$-th labeled point, $f_i$ is the predicted label for the $i$-th point, and $\lambda$ is a regularization parameter that controls the smoothness of the solution. 
+\end{comment}
 
 \subsection{Types of Kernels}
 \subsubsection{Mat\'{e}rn Family}
@@ -89,7 +92,26 @@ Green's functions of elliptic differential operators provide a natural way to de
 
 \subsection{GSSL Algorithms}
 \subsubsection{The Probit Method}
-The probit method is a statistical technique used for modeling binary response variables. In the kernel-based formulation of the probit method, the goal is to find the optimal values of the model coefficients, or dual variables, by maximizing the likelihood function. The likelihood function is defined as the product of the conditional probabilities of the response variable given the explanatory variables, which are modeled as a probit link function of a linear combination of kernel functions evaluated at the explanatory variables:
+The probit method is a statistical technique used for modeling binary response variables. We assume
+\[y_j = \mathrm{sign}(f(x_j) + \epsilon_j),\]
+for some latent function $f$, where $\epsilon_j\iid \psi$, for some probability density $\psi$. Assume $\psi$ is symmetric, so that
+\begin{align*}
+	\mathbb{P}(y_j = +1 \mid f) &= \mathbb{P}(f(x_j) + \epsilon_j \geq 0) \\
+	&= \mathbb{P}(\epsilon_j \geq - f(x_j)  ) \\
+	&= \int_{-f(x_j)}^\infty \psi(t) \ddd t \\
+	&= \int_{-\infty}^{f(x_j)} \psi(t) \ddd t \\
+	&= \Psi(f(x_j)) \\
+	&= \Psi(y_jf(x_j)),
+\end{align*}
+where $\Psi$ is the cumulative distribution function (CDF) of $\psi$. By the same calculation, we obtain $\mathbb{P}(y_j = -1 \mid f) = \Psi(y_jf(x_j))$. Thus, $\mathbb{P}(y_j \mid f) = \Psi(y_jf(x_j))$. Since the $\epsilon_j$ are independent and identically distributed, we can write
+\[\mathbb{P}(y  \mid f) = \prod_{j = 1}^n \Psi(y_jf(x_j)).\]
+For a function $f$, we want our loss function to be large when the signs of $f(x_j)$ and $y_j$  disagree, so we define our probit loss:
+\[L(f) = -\log(\mathbb{P}(y\mid f)) = -\sum_{j = 1}^n \Psi(y_jf(x_j)).\]
+Finally, we add a regularization term based on the RKHS norm to define our optimization problem.
+
+
+\begin{comment}
+In the kernel-based formulation of the probit method, the goal is to find the optimal values of the model coefficients, or dual variables, by maximizing the likelihood function. The likelihood function is defined as the product of the conditional probabilities of the response variable given the explanatory variables, which are modeled as a probit link function of a linear combination of kernel functions evaluated at the explanatory variables:
 $$\mathbb{P}_r(y_i = 1 | \mathbf{x}_i) = \Phi(\mathbf{w}^\top \boldsymbol{\phi}(\mathbf{x}_i)),$$
 where $y_i$ is the response variable for the $i$-th observation, $\mathbf{x}_i$ is the vector of explanatory variables, $\boldsymbol{\phi}(\cdot)$ is a nonlinear mapping of the input space to a high-dimensional feature space, $\mathbf{w}$ is a vector of model coefficients, and $\Phi(\cdot)$ is the cumulative distribution function of the standard normal distribution. The model coefficients are then estimated by solving an optimization problem of the form:
 $$\min_{\mathbf{w}} \left[- \sum_{i=1}^n y_i \log \Phi(\mathbf{w}^\top \boldsymbol{\phi}(\mathbf{x}_i)) + (1 - y_i) \log (1 - \Phi(\mathbf{w}^\top \boldsymbol{\phi}(\mathbf{x}_i))) + \frac{\lambda}{2} \Vert \mathbf{w} \Vert^2\right],$$
@@ -99,6 +121,8 @@ where $\boldsymbol{\alpha}$ are the dual variables, $f(\mathbf{x}_i) = \sum_{j=1
 
 \subsubsection{Spectral Clustering}
 Spectral clustering is a clustering technique that uses the eigenvectors of a matrix derived from the data to cluster the data points. One common approach is to use the Laplacian matrix of the graph defined by the data points. Once we have the Laplacian matrix, we can compute its eigenvectors and eigenvalues. The eigenvectors corresponding to the smallest eigenvalues (excluding the first eigenvector, which is constant) are used as the embedding of the data points. The embedding maps the data points to a low-dimensional space, where the pairwise distances reflect the underlying structure of the data. Finally, we can use a clustering algorithm (e.g., k-means) to cluster the data points in the embedding space. The number of clusters can be determined using the number of zero eigenvalues of the graph Laplacian.
+
+\end{comment}
 
 \section{Methods}
 Write about what it is we are actually going to do
