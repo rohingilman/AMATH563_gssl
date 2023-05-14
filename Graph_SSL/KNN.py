@@ -6,7 +6,7 @@ from scipy.spatial import distance
 
 from numpy import array, array_equal, allclose
 
-def KNN(X,k,m,ker):
+def KNN(X,m,k,ker):
     """
     Function that takes in data X in format
             X = np.array([[x,y]
@@ -37,11 +37,14 @@ def KNN(X,k,m,ker):
 
     return L,W
 
-def proximity(X,m,ker):
+def proximity(X,m,eps,ker):
     W = np.zeros((m,m))
     for i in range(m):
         for j in range(m):
-            W[i][j] = ker(X[i]-X[j])
+            if distance.euclidean(X[i],X[j]) < eps:
+                W[i][j] = ker(X[i],X[j])
+            else:
+                W[i][j] = 0
     
     d = np.sum(W,axis=1)
     D = np.diag(d)
