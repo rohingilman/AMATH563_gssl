@@ -11,16 +11,21 @@ from math import floor
 from math import log
 
 from KNN import KNN
+from KNN import proximity
 
-def GSSL_acc(X, y, kvals, k, tau, alpha, lossf):
-	# X are data points
-	# y are true values
-	# kvals are known values for X
-	# k is connectedness of graph (num of neighbors)
-	# value of tau in computing C
-	# value of alpha in computing C
-	# lossf is loss function
-	# kernel is kernel in weight matrix
+def GSSL_acc(X, y, kvals, k, tau, alpha, gamma, r, lossf, kernelf):
+	"""	
+	X are data points
+	y are true values
+	kvals are known values for X
+	k is connectedness of graph (num of neighbors)
+	value of tau in computing C
+	value of alpha in computing C
+	lossf is loss function
+	kernel is kernel in weight matrix
+	gamma is the parameter for the rbf kernel
+	r is the parameter of the uniform kernel
+	"""
 
 	def loss(kvals, y, f):
 		if lossf == "probit":
@@ -30,9 +35,13 @@ def GSSL_acc(X, y, kvals, k, tau, alpha, lossf):
 
 	m = len(y)
 
-	rbf = lambda x1, x2, gamma: np.exp(-gamma*np.linalg.norm(x1 - x2)**2)
+	if kernelf == "rbf":
+		ker = lambda x1, x2: np.exp(-gamma*np.linalg.norm(x1 - x2)**2)
+		L, W = KNN(X,k,m,ker)
+	elif kernelf == "unif":
+		ker = lambda x: 1 if x <= r else 0
+		L,W = proximity(X,m,ker)
 
-	L, W = KNN(X,k,m,rbf)
 
 	lamb = (tau**(2*alpha))/2
 	C = np.linalg.matrix_power(((L + (tau**2)*np.eye(m))),-alpha)

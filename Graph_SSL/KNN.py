@@ -27,7 +27,7 @@ def KNN(X,k,m,ker):
     nearest_neighbours = [X[i] for i in nearest_neighbours_idx]
     nearest_neighbours = [list(i) for i in nearest_neighbours]
 
-    W = np.reshape([ker(X[i],X[j],0.5) if arreq_in_list(X[i],nearest_neighbours[j]) or arreq_in_list(X[j],nearest_neighbours[i]) else 0 for i in range(len(X)) for j in range(len(nearest_neighbours))],(m,m))
+    W = np.reshape([ker(X[i],X[j]) if arreq_in_list(X[i],nearest_neighbours[j]) or arreq_in_list(X[j],nearest_neighbours[i]) else 0 for i in range(len(X)) for j in range(len(nearest_neighbours))],(m,m))
 
     d = np.sum(W,axis=1)
     D = np.diag(d)
@@ -37,5 +37,18 @@ def KNN(X,k,m,ker):
 
     return L,W
 
+def proximity(X,m,ker):
+    W = np.zeros((m,m))
+    for i in range(m):
+        for j in range(m):
+            W[i][j] = ker(X[i]-X[j])
+    
+    d = np.sum(W,axis=1)
+    D = np.diag(d)
+    D_2 = np.sqrt(D)
+    D_inv = np.linalg.inv(D_2)
+    L = D - W
+
+    return L,W
 
 
