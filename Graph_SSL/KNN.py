@@ -7,7 +7,8 @@ from scipy.spatial import distance
 from numpy import array, array_equal, allclose
 
 def KNN(X,k,m,ker):
-    """Function that takes in data X in format
+    """
+    Function that takes in data X in format
             X = np.array([[x,y]
                         [x,y]])
     where each element inside X is an np.array([]) object itself. We pass in an integer k that 
