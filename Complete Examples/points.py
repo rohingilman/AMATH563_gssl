@@ -2,6 +2,7 @@ from math import sin
 from math import cos
 
 import numpy as np
+from numpy.random import multivariate_normal as mvn
 
 def spiralPoints(n, t0, t1, nVar = 1.0):
 	# n is number of points to be sampled
