@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  19 MAY 2023 08:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  19 MAY 2023 08:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1004,37 +1004,19 @@ Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 7
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
  [2
 
- <./uw_theme_images/small_uw_logo.png>]
-File: uw_theme_images/small_uw_logo.png Graphic file (type png)
-<use uw_theme_images/small_uw_logo.png>
-Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 12.
-(pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
- [3
-
-] [4
-
-]) (rohinSlides.tex
+ <./uw_theme_images/small_uw_logo.png>]) (rohinSlides.tex
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
 <use uw_theme_images/small_uw_logo.png>
 Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 6.
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
- [5
-
-]
-File: uw_theme_images/small_uw_logo.png Graphic file (type png)
-<use uw_theme_images/small_uw_logo.png>
-Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 11.
-(pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
- [6
-
-] [7
+ [3
 
 ]) (Final Presentation.bbl)
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
 <use uw_theme_images/small_uw_logo.png>
 Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 116.
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
- [8
+ [4
 
  <C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1048,17 +1030,17 @@ Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 1
 
  (Final Presentation.aux) ) 
 Here is how much of TeX's memory you used:
- 32626 strings out of 478659
- 679428 string characters out of 2842566
+ 32610 strings out of 478659
+ 679296 string characters out of 2842566
  931555 words of memory out of 3000000
- 49997 multiletter control sequences out of 15000+600000
+ 49989 multiletter control sequences out of 15000+600000
  438534 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,619b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi0800.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk>
-Output written on "Final Presentation.pdf" (8 pages, 101151 bytes).
+Output written on "Final Presentation.pdf" (4 pages, 94587 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
