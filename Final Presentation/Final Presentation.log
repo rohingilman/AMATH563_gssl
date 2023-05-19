@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  19 MAY 2023 08:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  19 MAY 2023 10:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -796,24 +796,24 @@ File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 ) (Final Presentation.aux)
 \openout1 = `"Final Presentation.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -868,7 +868,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 17.
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -878,66 +878,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count368
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 20.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 20.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 17.
 \symnumbers=\mathgroup13
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 20.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 20.
+(Font)              `pureletters' in the math version `normal' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> T1/cmss/m/it on input line 20.
+(Font)                  OT1/mathkerncmss/m/sl --> T1/cmss/m/it on input line 17.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 20.
+(Font)              `pureletters' in the math version `bold' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> T1/cmss/m/it on input line 20.
+(Font)                  OT1/mathkerncmss/bx/sl --> T1/cmss/m/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 20.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 20.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 20.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 20.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 20.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 20.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 20.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 20.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 20.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 17.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 20.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 20.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 20.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 20.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 20.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 20.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 20.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 20.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 20.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 20.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 17.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 17.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 20.
+(Font)              `pureletters' in the math version `normal' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 20.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 17.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 20.
+(Font)              `pureletters' in the math version `bold' on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 20.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 17.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 20.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 17.
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
@@ -959,45 +959,21 @@ Package caption Info: End \AtBeginDocument code.
 <uw_theme_images/stacked_uw.png, id=12, 179.7114pt x 45.5301pt>
 File: uw_theme_images/stacked_uw.png Graphic file (type png)
 <use uw_theme_images/stacked_uw.png>
-Package pdftex.def Info: uw_theme_images/stacked_uw.png  used on input line 30.
+Package pdftex.def Info: uw_theme_images/stacked_uw.png  used on input line 27.
 (pdftex.def)             Requested size: 89.85547pt x 22.76498pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
- (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
- (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 30.
- (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 30.
- (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 30.
- (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-Underfull \hbox (badness 3492) in paragraph at lines 30--30
- [][] $[]$\T1/cmr/m/n/8 Very Fancy Uni-ver-sity
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ [][]
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 30--30
- []$[]$\T1/cmr/m/n/8 Another Fancy Uni-ver-sity
- []
-
-
-Overfull \vbox (7.98149pt too high) detected at line 30
+Overfull \vbox (7.98149pt too high) detected at line 27
  []
 
 [1
 
 {C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./uw_theme_images/stacked_uw.png>] (alexSlides.tex
-<uw_theme_images/small_uw_logo.png, id=27, 88.6512pt x 59.5023pt>
+<uw_theme_images/small_uw_logo.png, id=25, 88.6512pt x 59.5023pt>
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
 <use uw_theme_images/small_uw_logo.png>
 Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 7.
@@ -1011,10 +987,30 @@ Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 6
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
  [3
 
-]) (Final Presentation.bbl)
+]) (Final Presentation.bbl
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+ (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+ (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 11.
+ (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11.
+ (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 11.
+ (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+))
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
 <use uw_theme_images/small_uw_logo.png>
-Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 116.
+Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 113.
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
  [4
 
@@ -1030,17 +1026,17 @@ Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 1
 
  (Final Presentation.aux) ) 
 Here is how much of TeX's memory you used:
- 32610 strings out of 478659
- 679296 string characters out of 2842566
- 931555 words of memory out of 3000000
- 49989 multiletter control sequences out of 15000+600000
- 438534 words of font info for 112 fonts, out of 8000000 for 9000
+ 32569 strings out of 478659
+ 678767 string characters out of 2842566
+ 932231 words of memory out of 3000000
+ 49959 multiletter control sequences out of 15000+600000
+ 429946 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,122p,619b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi0800.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk>
-Output written on "Final Presentation.pdf" (4 pages, 94587 bytes).
+ 128i,14n,122p,619b,882s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi0800.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+Output written on "Final Presentation.pdf" (4 pages, 96550 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
+ 290 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
