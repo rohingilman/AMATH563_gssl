@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{First Section}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{A Subsection}{2}{0}{1}
+\beamer@sectionintoc {2}{First Section}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{A Subsection}{5}{0}{2}
+\beamer@sectionintoc {3}{Bibliography}{8}{0}{3}
