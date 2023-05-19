@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Final Presentation"] 1684518012 "Final Presentation.aux" "Final Presentation.bbl" "Final Presentation" 1684518017
+["bibtex Final Presentation"] 1684518158 "Final Presentation.aux" "Final Presentation.bbl" "Final Presentation" 1684518174
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291868336 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "Final Presentation.aux" 1684518016 3216 5aeb41654a5a1ebd1504c02c936eaf38 "pdflatex"
+  "Final Presentation.aux" 1684518173 4327 8e0fe53214497b919174baae7883694b "pdflatex"
   "bibliography_file.bib" 1684518010 5104 5585b623d9ccde439d1795696c7585cb ""
   (generated)
   "Final Presentation.bbl"
   "Final Presentation.blg"
-["pdflatex"] 1684518013 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Presentation/Final Presentation.tex" "Final Presentation.pdf" "Final Presentation" 1684518017
+["pdflatex"] 1684518170 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Presentation/Final Presentation.tex" "Final Presentation.pdf" "Final Presentation" 1684518174
   "C:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1684299643 115518 12727708efe1103296e4191777be1d34 ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1680204133 40136 9037dd1bd70b1fda1d0ef16fbbdeb3d9 ""
@@ -250,9 +250,9 @@
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "Final Presentation.aux" 1684518016 3216 5aeb41654a5a1ebd1504c02c936eaf38 "pdflatex"
-  "Final Presentation.bbl" 1684518013 629 28174ef0c6c176c54e6be54fd67c01ef "bibtex Final Presentation"
-  "Final Presentation.nav" 1684518016 1021 a221ea589b550ec9ffcc89530037ecc9 "pdflatex"
+  "Final Presentation.aux" 1684518173 4327 8e0fe53214497b919174baae7883694b "pdflatex"
+  "Final Presentation.bbl" 1684518159 629 28174ef0c6c176c54e6be54fd67c01ef "bibtex Final Presentation"
+  "Final Presentation.nav" 1684518173 1485 3306d2cb04872aeed82802a7cca412d5 "pdflatex"
   "Final Presentation.tex" 1684517803 2404 2673db59760ab5b72af8cfbcb26b4b46 ""
   "alexSlides.tex" 1684510796 145 b0427569871778fb07296ce9cc7929af ""
   "beamercolorthemeUW.sty" 1682623709 2596 4e3804804933e5afc8c8f220256ca4c3 ""
@@ -264,7 +264,7 @@
   "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Presentation/Final Presentation.tex" 1684517803 2404 2673db59760ab5b72af8cfbcb26b4b46 ""
   "macros.sty" 1682036688 2374 ec13082f49ffc466a65b47d073b1d5c8 ""
   "packages.sty" 1682198704 879 1e5438b18daac9ba29e50cb7c2b87818 ""
-  "rohinSlides.tex" 1684517614 90 02ed79bb6470f7772dcd9fa58d31141e ""
+  "rohinSlides.tex" 1684518168 323 6940d84534adba62cc0df8a0e0972e7d ""
   "uw_theme_images/small_uw_logo.png" 1682623709 4320 40bbc4aafccc4de40336e1eb18211a5b ""
   "uw_theme_images/stacked_uw.png" 1682623709 13885 7a65440eeada92bf8e490ffb592eef97 ""
   (generated)
