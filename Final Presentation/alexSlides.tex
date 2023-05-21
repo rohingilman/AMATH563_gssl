@@ -1,7 +1,7 @@
 \section{First Section}
 
 \subsection{A Subsection}
-	\begin{frame}{Introduction to Problem}{Spiral}
+	\begin{frame}{Introduction to Problem}
 		\begin{itemize}
 			\item Goal in SSL is, given $\{x_i,y_i\}_{i=1}^{M}$ and $\{x_i\}_{i=M+1}^{N}$, to predict $y_i(x_i)$ for $i=M+1, \dots , N$ where $M \ll N$.
 		\end{itemize}
@@ -11,7 +11,7 @@
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}{GSSL}{Spiral}
+	\begin{frame}{GSSL}
 		\begin{itemize}
 			\item We leverage spectral geometric properties of the graph Laplacian matrix $L$.
 			\item First, we construct our graphs by KNN or Proximity graph construction.
@@ -22,7 +22,7 @@
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}{Optimization Problem}{Setup and loss functions}
+	\begin{frame}{Optimization Problem}{Loss functions}
 		\begin{itemize}
 			\item General optimization
 			\[\vec{f^*} = \argmin_{\vec{f} \in \R^{m}} \mathcal{L}(\vec{f};y) + \lambda \vec{f}^{T}C^{-1}\vec{f}\]
