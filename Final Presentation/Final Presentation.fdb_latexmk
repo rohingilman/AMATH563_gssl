@@ -1,15 +1,13 @@
 # Fdb version 3
-["bibtex Final Presentation"] 1684539860 "Final Presentation.aux" "Final Presentation.bbl" "Final Presentation" 1684540657
+["bibtex Final Presentation"] 1684539860 "Final Presentation.aux" "Final Presentation.bbl" "Final Presentation" 1684690585
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "Final Presentation.aux" 1684540656 4179 5b6c55e60cbfc9f6b8802e85ec2b6d66 "pdflatex"
+  "Final Presentation.aux" 1684690585 4179 5b6c55e60cbfc9f6b8802e85ec2b6d66 "pdflatex"
   "bibliography_file.bib" 1684533934 5104 5585b623d9ccde439d1795696c7585cb ""
   (generated)
   "Final Presentation.blg"
   "Final Presentation.bbl"
-["pdflatex"] 1684540655 "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.tex" "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.pdf" "Final Presentation" 1684540657
-  "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiKNNRBF.png" 1684533934 228389 8e08136f36ae9c09bb1f4117a68073ee ""
-  "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiOg.png" 1684533934 211755 3788833f374246bb1259c93704e2b3cd ""
-  "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.aux" 1684540656 4179 5b6c55e60cbfc9f6b8802e85ec2b6d66 ""
+["pdflatex"] 1684690584 "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.tex" "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.pdf" "Final Presentation" 1684690585
+  "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.aux" 1684690585 4179 5b6c55e60cbfc9f6b8802e85ec2b6d66 ""
   "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.tex" 1684533934 2404 2673db59760ab5b72af8cfbcb26b4b46 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -295,11 +293,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "Final Presentation.aux" 1684540656 4179 5b6c55e60cbfc9f6b8802e85ec2b6d66 "pdflatex"
+  "Figures/SpiKNNRBF.png" 1684690550 228389 8e08136f36ae9c09bb1f4117a68073ee ""
+  "Figures/SpiOg.png" 1684690530 211755 3788833f374246bb1259c93704e2b3cd ""
+  "Final Presentation.aux" 1684690585 4179 5b6c55e60cbfc9f6b8802e85ec2b6d66 "pdflatex"
   "Final Presentation.bbl" 1684539861 611 28174ef0c6c176c54e6be54fd67c01ef "bibtex Final Presentation"
-  "Final Presentation.nav" 1684540656 1785 27f7bb466b12cb51b262fc5dbf8be858 "pdflatex"
+  "Final Presentation.nav" 1684690585 1785 27f7bb466b12cb51b262fc5dbf8be858 "pdflatex"
   "Final Presentation.tex" 1684533934 2404 2673db59760ab5b72af8cfbcb26b4b46 ""
-  "alexSlides.tex" 1684540655 2727 b61f4141723579f95253b876663073b1 ""
+  "alexSlides.tex" 1684690583 2599 e02acccf6deaeaacb0dc8d670895f986 ""
   "beamercolorthemeUW.sty" 1684533934 2596 4e3804804933e5afc8c8f220256ca4c3 ""
   "beamerfontthemeUW.sty" 1684533934 1361 ac97c79af0c6e70fc60bee585242083b ""
   "beamerinnerthemeUW.sty" 1684533934 2651 87c9dd099e67dd31df17f086eab0e2ba ""
@@ -311,11 +311,11 @@
   "uw_theme_images/small_uw_logo.png" 1684533934 4320 f14f3ea186cb45b0eb5c3993adc82f97 ""
   "uw_theme_images/stacked_uw.png" 1684533934 13885 2edb1727095ce6cb02b7950cfdd2b19c ""
   (generated)
-  "Final Presentation.aux"
-  "Final Presentation.toc"
-  "Final Presentation.snm"
-  "Final Presentation.log"
-  "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.log"
   "Final Presentation.nav"
+  "Final Presentation.aux"
+  "Final Presentation.log"
   "Final Presentation.pdf"
+  "Final Presentation.snm"
   "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.pdf"
+  "Final Presentation.toc"
+  "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.log"

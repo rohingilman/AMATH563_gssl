@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 MAY 2023 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 MAY 2023 10:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -963,10 +963,10 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
  (/usr/local/texlive/2020/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-</Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiOg.png, id=26, 446.41782pt x 331.99031pt>
-File: /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiOg.png Graphic file (type png)
-<use /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiOg.png>
-Package pdftex.def Info: /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiOg.png  used on input line 12.
+<Figures/SpiOg.png, id=26, 446.41782pt x 331.99031pt>
+File: Figures/SpiOg.png Graphic file (type png)
+<use Figures/SpiOg.png>
+Package pdftex.def Info: Figures/SpiOg.png  used on input line 12.
 (pdftex.def)             Requested size: 230.46971pt x 171.39484pt.
 <uw_theme_images/small_uw_logo.png, id=27, 88.6512pt x 59.5023pt>
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
@@ -975,11 +975,11 @@ Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 1
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
  [2
 
- </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_theme_images/small_uw_logo.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiOg.png>]
-</Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiKNNRBF.png, id=48, 448.29985pt x 334.24875pt>
-File: /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiKNNRBF.png Graphic file (type png)
-<use /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiKNNRBF.png>
-Package pdftex.def Info: /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiKNNRBF.png  used on input line 23.
+ </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_theme_images/small_uw_logo.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Figures/SpiOg.png>]
+<Figures/SpiKNNRBF.png, id=48, 448.29985pt x 334.24875pt>
+File: Figures/SpiKNNRBF.png Graphic file (type png)
+<use Figures/SpiKNNRBF.png>
+Package pdftex.def Info: Figures/SpiKNNRBF.png  used on input line 23.
 (pdftex.def)             Requested size: 184.37189pt x 137.46619pt.
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
 <use uw_theme_images/small_uw_logo.png>
@@ -987,7 +987,7 @@ Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 2
 (pdftex.def)             Requested size: 26.59555pt x 17.85081pt.
  [3
 
- </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Complete Examples/Figs/SpiKNNRBF.png>]
+ </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Figures/SpiKNNRBF.png>]
 File: uw_theme_images/small_uw_logo.png Graphic file (type png)
 <use uw_theme_images/small_uw_logo.png>
 Package pdftex.def Info: uw_theme_images/small_uw_logo.png  used on input line 39.
@@ -1047,7 +1047,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
  28391 strings out of 480608
- 576118 string characters out of 5903631
+ 575412 string characters out of 5903631
  839345 words of memory out of 5000000
  43571 multiletter control sequences out of 15000+600000
  557213 words of font info for 81 fonts, out of 8000000 for 9000
