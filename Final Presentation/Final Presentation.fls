@@ -302,6 +302,8 @@ INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/packag
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/packages.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/esint/esint.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/esint/esint.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/bbm.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/bbm.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/mathdots/mathdots.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/mathdots/mathdots.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
@@ -488,6 +490,11 @@ INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_the
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_theme_images/small_uw_logo.png
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_theme_images/small_uw_logo.png
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/bbm/bbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/bbm/bbm8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/bbm/bbm6.tfm
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_theme_images/small_uw_logo.png
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/uw_theme_images/small_uw_logo.png
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/rohinSlides.tex
@@ -538,6 +545,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/bbm/bbm10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/bbm/bbm7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/bbm/bbm5.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
@@ -569,6 +579,7 @@ OUTPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final
 OUTPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.snm
 INPUT /Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Presentation/Final Presentation.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT /Users/Johnson/Library/texlive/2020/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
