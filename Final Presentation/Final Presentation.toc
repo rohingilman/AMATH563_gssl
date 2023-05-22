@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{First Section}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{A Subsection}{2}{0}{1}
-\beamer@sectionintoc {2}{Results}{6}{0}{2}
-\beamer@sectionintoc {3}{Conclusions}{10}{0}{3}
-\beamer@sectionintoc {4}{Bibliography}{11}{0}{4}
