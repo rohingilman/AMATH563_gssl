@@ -8,6 +8,9 @@ from math import log
 from weights import KNN
 from weights import proximity
 
+def checkAccuracy(y, f):
+	return sum([x[0] == x[1] for x in zip(y,f)])/len(y)
+
 def KNN_acc(X, y, kvals, k, tau, alpha, lossf, kernel):
 	"""	
 	X are data points

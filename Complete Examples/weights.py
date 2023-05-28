@@ -19,14 +19,10 @@ def KNN(X,m,k,ker):
         return next((True for elem in list_arrays if array_equal(elem, myarr)), False)
     k += 1
 
-    print("Computing distance matrix")
-    distance_matrix = np.reshape([distance.euclidean(X[i],X[j]) for i in range(len(X)) for j in range(len(X))],(m,m))
-    # distance_matrix += np.eye(m)*2e10
-    # dot_products = X@X.T
-    # distance_matrix = np.sqrt(np.diagonal(dot_products) - 2*dot_products + np.diagonal(dot_products)[:,np.newaxis])
-    # result = matrix + array[:, np.newaxis]
-    # norms = np.diag(dot_products)
-    # distance_matrix = np.sqrt((norms - 2*dot_products).T + norms)
+    dot_products = X @ X.T
+    norms = np.diag(dot_products)
+    distance_matrix = np.sqrt((norms - 2*dot_products).T + norms)
+
 
     nearest_neighbours_idx = [list(i.argsort()[:k]) for i in distance_matrix]
 
@@ -35,6 +31,7 @@ def KNN(X,m,k,ker):
 
     W = np.reshape([ker(X[i],X[j]) if arreq_in_list(X[i],nearest_neighbours[j]) or arreq_in_list(X[j],nearest_neighbours[i]) else 0 for i in range(len(X)) for j in range(len(nearest_neighbours))],(m,m))
     W -= np.diag(np.diag(W))
+
     d = np.sum(W,axis=1)
     D = np.diag(d)
     L = D - W
