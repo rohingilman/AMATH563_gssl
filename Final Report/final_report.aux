@@ -16,8 +16,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\providecommand\babel@aux[2]{}
-\@nameuse{bbl@beforestart}
+\bbl@cs{beforestart}
 \babel@aux{english}{}
 \@writefile{toc}{\contentsline {section}{\tocsection {}{1}{Introduction}}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{2}{Theoretical Background}}{1}{section.2}\protected@file@percent }
@@ -32,14 +31,14 @@
 \@writefile{toc}{\contentsline {subsubsection}{\tocsubsubsection {}{2.4.1}{The Probit Method}}{4}{subsubsection.2.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{3}{Methods}}{5}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{4}{Methods}}{5}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{4.1}{General Procedure}}{6}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{4.2}{Subproblems}}{6}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{4.1}{General Procedure}}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{4.2}{Subproblems}}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  Plot of the 3 well-separated clusters; the yellow points represent a label of $+1$, while purple points represent a label of $-1$. The red points indicate the points for which the label is known. \relax }}{6}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{Fig:Dis3ClusOg}{{1}{6}{Plot of the 3 well-separated clusters; the yellow points represent a label of $+1$, while purple points represent a label of $-1$. The red points indicate the points for which the label is known. \relax }{figure.caption.1}{}}
 \@writefile{toc}{\contentsline {section}{\tocsection {}{5}{Results}}{6}{section.5}\protected@file@percent }
 \newlabel{Sec:3Clus}{{5.1}{6}{Clusters on $\mathbb {R}^2$}{subsection.5.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{5.1}{Clusters on $\mathbb  {R}^2$}}{6}{subsection.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  Plot of the 3 well-separated clusters; the yellow points represent a label of $+1$, while purple points represent a label of $-1$. The red points indicate the points for which the label is known. \relax }}{7}{figure.caption.1}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{Fig:Dis3ClusOg}{{1}{7}{Plot of the 3 well-separated clusters; the yellow points represent a label of $+1$, while purple points represent a label of $-1$. The red points indicate the points for which the label is known. \relax }{figure.caption.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Plot of the graph constructed on the unlabelled data from Figure~\ref  {Fig:Dis3ClusOg} when using a K-NN approach with a uniform kernel. Blue points indicate an unknown label, while red labels indicate known labels. \relax }}{7}{figure.caption.2}\protected@file@percent }
 \newlabel{Fig:Dis3ClusKNN}{{2}{7}{Plot of the graph constructed on the unlabelled data from Figure~\ref {Fig:Dis3ClusOg} when using a K-NN approach with a uniform kernel. Blue points indicate an unknown label, while red labels indicate known labels. \relax }{figure.caption.2}{}}
 \newlabel{Fig:Dis3ClusKNNPro}{{3a}{8}{Probit Loss Function\relax }{figure.caption.3}{}}
@@ -48,15 +47,21 @@
 \newlabel{sub@Fig:Dis3ClusKNNReg}{{b}{8}{Regression Loss Function\relax }{figure.caption.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Plot of the predicted labels for the K-NN graph in Figure~\ref  {Fig:Dis3ClusKNN} and proximity graph in Figure~\ref  {Fig:Dis3ClusProx} using only the known labels.\relax }}{8}{figure.caption.3}\protected@file@percent }
 \newlabel{Fig:Dis3ClusKNNRes}{{3}{8}{Plot of the predicted labels for the K-NN graph in Figure~\ref {Fig:Dis3ClusKNN} and proximity graph in Figure~\ref {Fig:Dis3ClusProx} using only the known labels.\relax }{figure.caption.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{5.2}{Clusters on the Swiss Roll}}{8}{subsection.5.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Plot of the graph constructed on the unlabelled data from Figure~\ref  {Fig:Dis3ClusOg} when using a full proximity graph approach with the RBF kernel. Note that the darker the shade of the edge, the higher its weight is. Note that this graph is fully connected with weights between clusters that are difficult to make out due to them having weight of $O(\epsilon )$. \relax }}{9}{figure.caption.4}\protected@file@percent }
-\newlabel{Fig:Dis3ClusProx}{{4}{9}{Plot of the graph constructed on the unlabelled data from Figure~\ref {Fig:Dis3ClusOg} when using a full proximity graph approach with the RBF kernel. Note that the darker the shade of the edge, the higher its weight is. Note that this graph is fully connected with weights between clusters that are difficult to make out due to them having weight of $O(\epsilon )$. \relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Plot of the graph constructed on the unlabelled data from Figure~\ref  {Fig:Dis3ClusOg} when using a full proximity graph approach with the RBF kernel. Note that the darker the shade of the edge, the higher its weight is. Note that this graph is fully connected with weights between clusters that are difficult to make out due to them having weight of $O(\epsilon )$. \relax }}{8}{figure.caption.4}\protected@file@percent }
+\newlabel{Fig:Dis3ClusProx}{{4}{8}{Plot of the graph constructed on the unlabelled data from Figure~\ref {Fig:Dis3ClusOg} when using a full proximity graph approach with the RBF kernel. Note that the darker the shade of the edge, the higher its weight is. Note that this graph is fully connected with weights between clusters that are difficult to make out due to them having weight of $O(\epsilon )$. \relax }{figure.caption.4}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Average Accuracy of predicted labels over 50 runs for both a fully disconnected and a weakly connected graph using both probit and regression loss functions.\relax }}{9}{table.caption.5}\protected@file@percent }
 \newlabel{Table:3ClusRes}{{1}{9}{Average Accuracy of predicted labels over 50 runs for both a fully disconnected and a weakly connected graph using both probit and regression loss functions.\relax }{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{5.2}{Clusters on the Swiss Roll}}{9}{subsection.5.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  Plot of the 3 clusters on the Swiss roll manifold with $t$-ranges $[\pi ,5\pi /2]$, $[3\pi ,7\pi /2]$, and $[4\pi ,9\pi /2]$. The blue sprial represents the true swiss roll manifold for which our clusters are generated around. \relax }}{10}{figure.caption.6}\protected@file@percent }
 \newlabel{Fig:SpiOg}{{5}{10}{Plot of the 3 clusters on the Swiss roll manifold with $t$-ranges $[\pi ,5\pi /2]$, $[3\pi ,7\pi /2]$, and $[4\pi ,9\pi /2]$. The blue sprial represents the true swiss roll manifold for which our clusters are generated around. \relax }{figure.caption.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Accuracy of predicted labels over 1 run and average accuracy over 50 runs for 3 different types of graphs using both probit and regression loss functions. Note that we did not perform 50 trials for the proximity graph with the RBF kernel as this approach performed very poorly in our initial tests.\relax }}{10}{table.caption.9}\protected@file@percent }
-\newlabel{Table:SpiRes}{{2}{10}{Accuracy of predicted labels over 1 run and average accuracy over 50 runs for 3 different types of graphs using both probit and regression loss functions. Note that we did not perform 50 trials for the proximity graph with the RBF kernel as this approach performed very poorly in our initial tests.\relax }{table.caption.9}{}}
+\newlabel{Fig:SpiKNNUni}{{6a}{10}{K-NN with uniform kernel\relax }{figure.caption.7}{}}
+\newlabel{sub@Fig:SpiKNNUni}{{a}{10}{K-NN with uniform kernel\relax }{figure.caption.7}{}}
+\newlabel{Fig:SpiKNNRBF}{{6b}{10}{K-NN with RBF kernel\relax }{figure.caption.7}{}}
+\newlabel{sub@Fig:SpiKNNRBF}{{b}{10}{K-NN with RBF kernel\relax }{figure.caption.7}{}}
+\newlabel{Fig:SpiProx}{{6c}{10}{Proximity with RBF kernel\relax }{figure.caption.7}{}}
+\newlabel{sub@Fig:SpiProx}{{c}{10}{Proximity with RBF kernel\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Plot of the graphs formed for the data in Figure~\ref  {Fig:SpiOg}. Each subfigure shows a different graph forming technique.\relax }}{10}{figure.caption.7}\protected@file@percent }
+\newlabel{Fig:SpiGraphs}{{6}{10}{Plot of the graphs formed for the data in Figure~\ref {Fig:SpiOg}. Each subfigure shows a different graph forming technique.\relax }{figure.caption.7}{}}
 \bibstyle{plain}
 \bibdata{refs}
 \newlabel{tocindent-1}{0pt}
@@ -64,28 +69,21 @@
 \newlabel{tocindent1}{20.88867pt}
 \newlabel{tocindent2}{34.5pt}
 \newlabel{tocindent3}{0pt}
-\newlabel{Fig:SpiKNNUni}{{6a}{11}{K-NN with uniform kernel\relax }{figure.caption.7}{}}
-\newlabel{sub@Fig:SpiKNNUni}{{a}{11}{K-NN with uniform kernel\relax }{figure.caption.7}{}}
-\newlabel{Fig:SpiKNNRBF}{{6b}{11}{K-NN with RBF kernel\relax }{figure.caption.7}{}}
-\newlabel{sub@Fig:SpiKNNRBF}{{b}{11}{K-NN with RBF kernel\relax }{figure.caption.7}{}}
-\newlabel{Fig:SpiProx}{{6c}{11}{Proximity with RBF kernel\relax }{figure.caption.7}{}}
-\newlabel{sub@Fig:SpiProx}{{c}{11}{Proximity with RBF kernel\relax }{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Plot of the graphs formed for the data in Figure~\ref  {Fig:SpiOg}. Each subfigure shows a different graph forming technique.\relax }}{11}{figure.caption.7}\protected@file@percent }
-\newlabel{Fig:SpiGraphs}{{6}{11}{Plot of the graphs formed for the data in Figure~\ref {Fig:SpiOg}. Each subfigure shows a different graph forming technique.\relax }{figure.caption.7}{}}
+\newlabel{Fig:SpiKNNUniPro}{{7a}{11}{K-NN with uniform kernel: Probit\relax }{figure.caption.8}{}}
+\newlabel{sub@Fig:SpiKNNUniPro}{{a}{11}{K-NN with uniform kernel: Probit\relax }{figure.caption.8}{}}
+\newlabel{Fig:SpiKNNUniReg}{{7b}{11}{K-NN with uniform kernel: Regression\relax }{figure.caption.8}{}}
+\newlabel{sub@Fig:SpiKNNUniReg}{{b}{11}{K-NN with uniform kernel: Regression\relax }{figure.caption.8}{}}
+\newlabel{Fig:SpiKNNRBFPro}{{7c}{11}{K-NN with RBF kernel: Probit\relax }{figure.caption.8}{}}
+\newlabel{sub@Fig:SpiKNNRBFPro}{{c}{11}{K-NN with RBF kernel: Probit\relax }{figure.caption.8}{}}
+\newlabel{Fig:SpiKNNRBFReg}{{7d}{11}{K-NN with RBF kernel: Regression\relax }{figure.caption.8}{}}
+\newlabel{sub@Fig:SpiKNNRBFReg}{{d}{11}{K-NN with RBF kernel: Regression\relax }{figure.caption.8}{}}
+\newlabel{Fig:SpiProxPro}{{7e}{11}{Proximity with RBF kernel: Probit\relax }{figure.caption.8}{}}
+\newlabel{sub@Fig:SpiProxPro}{{e}{11}{Proximity with RBF kernel: Probit\relax }{figure.caption.8}{}}
+\newlabel{Fig:SpiProxReg}{{7f}{11}{Proximity with RBF kernel: Regression\relax }{figure.caption.8}{}}
+\newlabel{sub@Fig:SpiProxReg}{{f}{11}{Proximity with RBF kernel: Regression\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Plot of the predicted labels for the clusters generated on the Swiss Roll manifold using the graphs generated in Figure~\ref  {Fig:SpiGraphs}. \relax }}{11}{figure.caption.8}\protected@file@percent }
+\newlabel{Fig:SpiPred}{{7}{11}{Plot of the predicted labels for the clusters generated on the Swiss Roll manifold using the graphs generated in Figure~\ref {Fig:SpiGraphs}. \relax }{figure.caption.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{5.3}{MNIST Data}}{11}{subsection.5.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{6}{Conclusion}}{11}{section.6}\protected@file@percent }
-\newlabel{Fig:SpiKNNUniPro}{{7a}{12}{K-NN with uniform kernel: Probit\relax }{figure.caption.8}{}}
-\newlabel{sub@Fig:SpiKNNUniPro}{{a}{12}{K-NN with uniform kernel: Probit\relax }{figure.caption.8}{}}
-\newlabel{Fig:SpiKNNUniReg}{{7b}{12}{K-NN with uniform kernel: Regression\relax }{figure.caption.8}{}}
-\newlabel{sub@Fig:SpiKNNUniReg}{{b}{12}{K-NN with uniform kernel: Regression\relax }{figure.caption.8}{}}
-\newlabel{Fig:SpiKNNRBFPro}{{7c}{12}{K-NN with RBF kernel: Probit\relax }{figure.caption.8}{}}
-\newlabel{sub@Fig:SpiKNNRBFPro}{{c}{12}{K-NN with RBF kernel: Probit\relax }{figure.caption.8}{}}
-\newlabel{Fig:SpiKNNRBFReg}{{7d}{12}{K-NN with RBF kernel: Regression\relax }{figure.caption.8}{}}
-\newlabel{sub@Fig:SpiKNNRBFReg}{{d}{12}{K-NN with RBF kernel: Regression\relax }{figure.caption.8}{}}
-\newlabel{Fig:SpiProxPro}{{7e}{12}{Proximity with RBF kernel: Probit\relax }{figure.caption.8}{}}
-\newlabel{sub@Fig:SpiProxPro}{{e}{12}{Proximity with RBF kernel: Probit\relax }{figure.caption.8}{}}
-\newlabel{Fig:SpiProxReg}{{7f}{12}{Proximity with RBF kernel: Regression\relax }{figure.caption.8}{}}
-\newlabel{sub@Fig:SpiProxReg}{{f}{12}{Proximity with RBF kernel: Regression\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Plot of the predicted labels for the clusters generated on the Swiss Roll manifold using the graphs generated in Figure~\ref  {Fig:SpiGraphs}. \relax }}{12}{figure.caption.8}\protected@file@percent }
-\newlabel{Fig:SpiPred}{{7}{12}{Plot of the predicted labels for the clusters generated on the Swiss Roll manifold using the graphs generated in Figure~\ref {Fig:SpiGraphs}. \relax }{figure.caption.8}{}}
-\gdef \@abspage@last{12}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Accuracy of predicted labels over 1 run and average accuracy over 50 runs for 3 different types of graphs using both probit and regression loss functions. Note that we did not perform 50 trials for the proximity graph with the RBF kernel as this approach performed very poorly in our initial tests.\relax }}{12}{table.caption.9}\protected@file@percent }
+\newlabel{Table:SpiRes}{{2}{12}{Accuracy of predicted labels over 1 run and average accuracy over 50 runs for 3 different types of graphs using both probit and regression loss functions. Note that we did not perform 50 trials for the proximity graph with the RBF kernel as this approach performed very poorly in our initial tests.\relax }{table.caption.9}{}}
