@@ -17,7 +17,6 @@ def KNN(X,m,k,ker):
     """
     def arreq_in_list(myarr, list_arrays):
         return next((True for elem in list_arrays if array_equal(elem, myarr)), False)
-
     k += 1
 
     dot_products = X @ X.T
@@ -25,19 +24,18 @@ def KNN(X,m,k,ker):
     distance_matrix = np.sqrt((norms - 2*dot_products).T + norms)
 
 
-
     nearest_neighbours_idx = [list(i.argsort()[:k]) for i in distance_matrix]
 
-    nearest_neighbours = [X[i] for i in nearest_neighbours_idx]
-    nearest_neighbours = [list(i) for i in nearest_neighbours]
+    nearest_neighbours = [list(X[i]) for i in nearest_neighbours_idx]
+    # nearest_neighbours = [list(i) for i in nearest_neighbours]
 
     W = np.reshape([ker(X[i],X[j]) if arreq_in_list(X[i],nearest_neighbours[j]) or arreq_in_list(X[j],nearest_neighbours[i]) else 0 for i in range(len(X)) for j in range(len(nearest_neighbours))],(m,m))
-
-    W = W - np.diag(np.diag(W))
+    W -= np.diag(np.diag(W))
 
     d = np.sum(W,axis=1)
     D = np.diag(d)
     L = D - W
+    print("Finished computing graph laplacian")
 
     return L,W
 
