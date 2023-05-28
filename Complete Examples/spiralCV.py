@@ -63,7 +63,7 @@ def main():
 		
 	print(avgClusts)
 	'''
-
+	'''
 	# Now let's try with RBF
 
 	params = {
@@ -95,6 +95,18 @@ def main():
 	print(avgClusts)
 
 	#Step 2: Cross Validating the Model Paramters
+	'''
+
+	X,y,knownvals = clusters()
+	gamma = 3.75
+	rbf = lambda x1, x2: np.exp(gamma**2*-0.5*dist(x1,x2)**2)
+
+	L, W = proximity(X, 400, 3, rbf)
+
+	ews,evs = np.linalg.eigh(L)
+
+	print(numClusters(ews))
+
 	
 
 if __name__=="__main__":
