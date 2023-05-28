@@ -76,17 +76,6 @@ where $y_i$ is the label for the $i$-th labeled point, $f_i$ is the predicted la
 
 \subsection{Types of Kernels}
 \subsubsection{Mat\'{e}rn Family}
-\subsubsection{Green's Function of Elliptic Differential Operators}
-A Green's function is a solution to the equation:
-$$\mathcal{L} G(x,y) = \delta(x-y),$$
-where $\mathcal{L}$ is an elliptic differential operator, $\delta$ is the Dirac delta function, and $G(x,y)$ is the Green's function. If we have a linear elliptic differential equation of the form
-$$\mathcal{L} u(x) = f(x),$$
-with boundary conditions, we can solve for the solution $u(x)$ using the Green's function as follows:
-$$u(x) = \int G(x,y) f(y) \mathrm{d}y,$$
-where the integral is taken over the domain of the equation.
-
-Green's functions of elliptic differential operators provide a natural way to define diffusion processes on graphs in GSSL, where the information from the labeled points diffuses through the graph to the unlabeled points. This diffusion process can be described using a diffusion kernel, which is defined in terms of the graph Laplacian, an elliptic differential operator on the graph. The Green's function of the graph Laplacian can be used to construct the diffusion kernel, which in turn can be used to define a diffusion process that spreads the information from the labeled points to the unlabeled points. This diffusion process can then be used to make predictions for the unlabeled data points, based on the information that has diffused from the labeled points.
-\textcolor{red}{I really don't know how necessary our discussion on Green's functions is besides that we can use it to construct our matérn kernels}
 
 \subsection{GSSL Algorithms}
 \subsubsection{The Probit Method}

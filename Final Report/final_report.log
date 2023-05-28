@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 MAY 2023 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 MAY 2023 19:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -736,139 +736,142 @@ Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \vbox (badness 2443) has occurred while \output is active []
 
- [2] [3] [4] [5]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 149.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 149.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 149.
-
-<Figures/Dis3ClusOG.png, id=116, 396.35577pt x 296.60812pt>
-File: Figures/Dis3ClusOG.png Graphic file (type png)
-<use Figures/Dis3ClusOG.png>
-Package pdftex.def Info: Figures/Dis3ClusOG.png  used on input line 153.
-(pdftex.def)             Requested size: 234.8775pt x 175.7712pt.
-<Figures/Dis3ClusKNN.png, id=119, 395.22656pt x 292.46765pt>
-File: Figures/Dis3ClusKNN.png Graphic file (type png)
-<use Figures/Dis3ClusKNN.png>
-Package pdftex.def Info: Figures/Dis3ClusKNN.png  used on input line 163.
-(pdftex.def)             Requested size: 234.8775pt x 173.80843pt.
-
-LaTeX Warning: Reference `Sec:Probit' on page 6 undefined on input line 169.
-
-[6 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusOG.png>]
-<Figures/Dis3ClusKNNPro.png, id=129, 397.8614pt x 295.47891pt>
-File: Figures/Dis3ClusKNNPro.png Graphic file (type png)
-<use Figures/Dis3ClusKNNPro.png>
-Package pdftex.def Info: Figures/Dis3ClusKNNPro.png  used on input line 175.
-(pdftex.def)             Requested size: 178.50987pt x 132.57202pt.
-<Figures/Dis3ClusKNNReg.png, id=130, 396.35577pt x 293.22047pt>
-File: Figures/Dis3ClusKNNReg.png Graphic file (type png)
-<use Figures/Dis3ClusKNNReg.png>
-Package pdftex.def Info: Figures/Dis3ClusKNNReg.png  used on input line 181.
-(pdftex.def)             Requested size: 178.50987pt x 132.05983pt.
-<Figures/Dis3ClusProx.png, id=137, 402.37828pt x 289.08pt>
-File: Figures/Dis3ClusProx.png Graphic file (type png)
-<use Figures/Dis3ClusProx.png>
-Package pdftex.def Info: Figures/Dis3ClusProx.png  used on input line 194.
-(pdftex.def)             Requested size: 234.8775pt x 168.7428pt.
-
+ [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusKNN.png>]
-<Figures/SpiOg.png, id=152, 446.41782pt x 331.99031pt>
+ [3]
+Underfull \vbox (badness 3954) has occurred while \output is active []
+
+ [4]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 138.
+
+<Figures/Dis3ClusOG.png, id=106, 396.35577pt x 296.60812pt>
+File: Figures/Dis3ClusOG.png Graphic file (type png)
+<use Figures/Dis3ClusOG.png>
+Package pdftex.def Info: Figures/Dis3ClusOG.png  used on input line 142.
+(pdftex.def)             Requested size: 234.8775pt x 175.7712pt.
+<Figures/Dis3ClusKNN.png, id=109, 395.22656pt x 292.46765pt>
+File: Figures/Dis3ClusKNN.png Graphic file (type png)
+<use Figures/Dis3ClusKNN.png>
+Package pdftex.def Info: Figures/Dis3ClusKNN.png  used on input line 152.
+(pdftex.def)             Requested size: 234.8775pt x 173.80843pt.
+
+LaTeX Warning: Reference `Sec:Probit' on page 5 undefined on input line 158.
+
+[5] [6 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusOG.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusKNN.png>]
+<Figures/Dis3ClusKNNPro.png, id=130, 397.8614pt x 295.47891pt>
+File: Figures/Dis3ClusKNNPro.png Graphic file (type png)
+<use Figures/Dis3ClusKNNPro.png>
+Package pdftex.def Info: Figures/Dis3ClusKNNPro.png  used on input line 164.
+(pdftex.def)             Requested size: 178.50987pt x 132.57202pt.
+<Figures/Dis3ClusKNNReg.png, id=131, 396.35577pt x 293.22047pt>
+File: Figures/Dis3ClusKNNReg.png Graphic file (type png)
+<use Figures/Dis3ClusKNNReg.png>
+Package pdftex.def Info: Figures/Dis3ClusKNNReg.png  used on input line 170.
+(pdftex.def)             Requested size: 178.50987pt x 132.05983pt.
+<Figures/Dis3ClusProx.png, id=138, 402.37828pt x 289.08pt>
+File: Figures/Dis3ClusProx.png Graphic file (type png)
+<use Figures/Dis3ClusProx.png>
+Package pdftex.def Info: Figures/Dis3ClusProx.png  used on input line 183.
+(pdftex.def)             Requested size: 234.8775pt x 168.7428pt.
+ [7 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusKNNPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusKNNReg.png>]
+<Figures/SpiOg.png, id=154, 446.41782pt x 331.99031pt>
 File: Figures/SpiOg.png Graphic file (type png)
 <use Figures/SpiOg.png>
-Package pdftex.def Info: Figures/SpiOg.png  used on input line 229.
+Package pdftex.def Info: Figures/SpiOg.png  used on input line 218.
 (pdftex.def)             Requested size: 234.8775pt x 174.67238pt.
-
-Underfull \vbox (badness 1199) has occurred while \output is active []
-
- [8 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusKNNPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusKNNReg.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusProx.png>]
-<Figures/SpiKNNUni.png, id=163, 451.6875pt x 338.01282pt>
+ [8 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/Dis3ClusProx.png>]
+<Figures/SpiKNNUni.png, id=162, 451.6875pt x 338.01282pt>
 File: Figures/SpiKNNUni.png Graphic file (type png)
 <use Figures/SpiKNNUni.png>
-Package pdftex.def Info: Figures/SpiKNNUni.png  used on input line 240.
+Package pdftex.def Info: Figures/SpiKNNUni.png  used on input line 229.
 (pdftex.def)             Requested size: 178.50987pt x 133.58838pt.
-<Figures/SpiKNNRBF.png, id=164, 448.29985pt x 334.24875pt>
+<Figures/SpiKNNRBF.png, id=163, 448.29985pt x 334.24875pt>
 File: Figures/SpiKNNRBF.png Graphic file (type png)
 <use Figures/SpiKNNRBF.png>
-Package pdftex.def Info: Figures/SpiKNNRBF.png  used on input line 246.
+Package pdftex.def Info: Figures/SpiKNNRBF.png  used on input line 235.
 (pdftex.def)             Requested size: 178.50987pt x 133.09529pt.
-<Figures/SpiProx.png, id=165, 448.67625pt x 333.87234pt>
+<Figures/SpiProx.png, id=164, 448.67625pt x 333.87234pt>
 File: Figures/SpiProx.png Graphic file (type png)
 <use Figures/SpiProx.png>
-Package pdftex.def Info: Figures/SpiProx.png  used on input line 252.
+Package pdftex.def Info: Figures/SpiProx.png  used on input line 241.
 (pdftex.def)             Requested size: 178.50987pt x 132.83334pt.
 
 
-LaTeX Warning: Reference `Sec:Probit' on page 9 undefined on input line 260.
+LaTeX Warning: Reference `Sec:Probit' on page 9 undefined on input line 249.
 
-<Figures/SpiKNNUniPro.png, id=170, 452.0639pt x 331.99031pt>
+<Figures/SpiKNNUniPro.png, id=169, 452.0639pt x 331.99031pt>
 File: Figures/SpiKNNUniPro.png Graphic file (type png)
 <use Figures/SpiKNNUniPro.png>
-Package pdftex.def Info: Figures/SpiKNNUniPro.png  used on input line 264.
+Package pdftex.def Info: Figures/SpiKNNUniPro.png  used on input line 253.
 (pdftex.def)             Requested size: 178.50987pt x 131.09166pt.
-<Figures/SpiKNNUniReg.png, id=171, 453.19313pt x 333.11954pt>
+<Figures/SpiKNNUniReg.png, id=170, 453.19313pt x 333.11954pt>
 File: Figures/SpiKNNUniReg.png Graphic file (type png)
 <use Figures/SpiKNNUniReg.png>
-Package pdftex.def Info: Figures/SpiKNNUniReg.png  used on input line 270.
+Package pdftex.def Info: Figures/SpiKNNUniReg.png  used on input line 259.
 (pdftex.def)             Requested size: 178.50987pt x 131.21225pt.
-<Figures/SpiKNNRBFPro.png, id=172, 447.92343pt x 335.00156pt>
+<Figures/SpiKNNRBFPro.png, id=171, 447.92343pt x 335.00156pt>
 File: Figures/SpiKNNRBFPro.png Graphic file (type png)
 <use Figures/SpiKNNRBFPro.png>
-Package pdftex.def Info: Figures/SpiKNNRBFPro.png  used on input line 276.
+Package pdftex.def Info: Figures/SpiKNNRBFPro.png  used on input line 265.
 (pdftex.def)             Requested size: 178.50987pt x 133.50241pt.
-<Figures/SpiKNNRBFReg.png, id=173, 450.55829pt x 333.87234pt>
+<Figures/SpiKNNRBFReg.png, id=172, 450.55829pt x 333.87234pt>
 File: Figures/SpiKNNRBFReg.png Graphic file (type png)
 <use Figures/SpiKNNRBFReg.png>
-Package pdftex.def Info: Figures/SpiKNNRBFReg.png  used on input line 282.
+Package pdftex.def Info: Figures/SpiKNNRBFReg.png  used on input line 271.
 (pdftex.def)             Requested size: 178.50987pt x 132.27805pt.
-<Figures/SpiProxPro.png, id=174, 450.9347pt x 333.11954pt>
+<Figures/SpiProxPro.png, id=173, 450.9347pt x 333.11954pt>
 File: Figures/SpiProxPro.png Graphic file (type png)
 <use Figures/SpiProxPro.png>
-Package pdftex.def Info: Figures/SpiProxPro.png  used on input line 288.
+Package pdftex.def Info: Figures/SpiProxPro.png  used on input line 277.
 (pdftex.def)             Requested size: 178.50987pt x 131.87303pt.
-<Figures/SpiProxReg.png, id=175, 448.29985pt x 332.74312pt>
+<Figures/SpiProxReg.png, id=174, 448.29985pt x 332.74312pt>
 File: Figures/SpiProxReg.png Graphic file (type png)
 <use Figures/SpiProxReg.png>
-Package pdftex.def Info: Figures/SpiProxReg.png  used on input line 294.
+Package pdftex.def Info: Figures/SpiProxReg.png  used on input line 283.
 (pdftex.def)             Requested size: 178.50987pt x 132.49576pt.
-[9] [10 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiOg.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNUni.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNRBF.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiProx.png>]
+
+Underfull \vbox (badness 3439) has occurred while \output is active []
+
+ [9 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiOg.png>]
 No file final_report.bbl.
-[11 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNUniPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNUniReg.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNRBFPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNRBFReg.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiProxPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiProxReg.png>] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+[10 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNUni.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNRBF.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiProx.png>] [11 </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNUniPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNUniReg.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNRBFPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiKNNRBFReg.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiProxPro.png> </Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/Figures/SpiProxReg.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
  (/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/final_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
 Package rerunfilecheck Info: File `final_report.out' has not changed.
 (rerunfilecheck)             Checksum: 108CFF1E2B7494573996BAF0238F6D20;924.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
  ) 
 Here is how much of TeX's memory you used:
- 22175 strings out of 480608
- 401449 string characters out of 5903631
- 676906 words of memory out of 5000000
+ 22173 strings out of 480608
+ 401423 string characters out of 5903631
+ 673905 words of memory out of 5000000
  37389 multiletter control sequences out of 15000+600000
  542575 words of font info for 70 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,9n,60p,1182b,586s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/final_report.pdf" (12 pages, 2738342 bytes).
+Output written on "/Users/Johnson/Documents/Amath_563/AMATH563_gssl/Final Report/final_report.pdf" (11 pages, 2734227 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
  212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
