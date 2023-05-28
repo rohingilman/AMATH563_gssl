@@ -68,7 +68,7 @@ def main():
 
 	params = {
 		"k": [4],
-		"gamma": [0.3]
+		"gamma": [0.1]
 		}
 
 	keys, values = zip(*params.items())
@@ -90,7 +90,7 @@ def main():
 			ews,evs = np.linalg.eigh(L)
 
 			sumClusts += numClusters(ews)
-		avgClusts += [[c,sumClusts/50]]
+		avgClusts += [[c,sumClusts/20]]
 
 	print(avgClusts)
 
