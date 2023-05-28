@@ -27,7 +27,7 @@ def KNN_acc(X, y, kvals, k, tau, alpha, lossf, kernel):
 			return sum([(y[j]-f[j])**2 for j in kvals])
 
 	m = len(y)
-
+	print("entering in KNN function")
 	L, W = KNN(X, m, k, kernel)
 
 	lamb = (tau**(2*alpha))/2
@@ -43,8 +43,10 @@ def KNN_acc(X, y, kvals, k, tau, alpha, lossf, kernel):
 
 	f0 = np.zeros(m)
 
+	print("Starting the minimization")
 	result = minimize(to_minimize, f0, args=(kvals,y,lamb,C_inv), method='BFGS')
 
+	print("After minimizing")
 	f_star = result.x
 
 	y_pred = np.sign(f_star)
