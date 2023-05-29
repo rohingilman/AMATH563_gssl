@@ -26,13 +26,9 @@
 \newcommand{\iid}{\overset{\mathrm{iid}}{\sim}}
 
 
-\title{GSSL Project Report (should change this)}
+\title{GSSL Project Report \emph{(should change this)}}
 
 \author{Rohin Gilman \and Alex Johnson \and Kaitlynn Lilly}
-
-
-\date{June 9, 2023}
-
 
 \doublespacing
 \begin{document}
@@ -44,41 +40,35 @@
 \maketitle
 
 \section{Introduction} 
-Graphical semi-supervised learning (GSSL) is a prominent field of research in machine learning as it serves as a powerful technique for dealing with classification problems in which only a small subset of the data is labeled. \textcolor{red}{Incorporating kernel methods into GSSL has emerged as a popular approach in machine learning due to its ability to leverage both labeled and unlabeled data, resulting in improved accuracy and robustness. In kernel methods, the unlabeled data is used to construct a similarity graph, where each node represents an instance and the edges indicate the similarity between them. Clustering this graph results in a complete labeling of the data set.} As a result, graphical semi-supervised learning using kernel methods is a promising approach for tackling real-world problems in various domains such as image recognition, natural language processing, and bioinformatics.
+Graphical semi-supervised learning (GSSL) is a prominent field of research in machine learning as it serves as a powerful technique for dealing with classification problems in which only a small subset of the data is labeled. In kernel methods for GSSL, the unlabeled data is used to construct a similarity graph, where each node represents an instance and the edges indicate the similarity between them. Clustering this graph results in a complete labeling of the data set. As a result, GSSL using kernel methods is a promising approach for tackling problems in areas such as image recognition, natural language processing, and bioinformatics.
 
 \section{Theoretical Background}
 
-\subsection{Types of Graphs}
-\subsubsection{Proximity Graphs}
-Given a set of $n$ points $\{x_1, x_2, \dots, x_n\}$ in a metric space, a proximity graph is a graph, $G = (V, W)$, where $V = \{v_1, v_2, \dots, v_n\}$ is a set of vertices representing the points, and $W$ is an adjacency matrix whose elements represent the weights of the edges connecting pairs of vertices that are ``close," according to some measure of proximity.
-
-To represent the proximity graph $G$ using a weight matrix, we define a non-increasing kernel function $K\colon X \times X \rightarrow \mathbb{R}$, which captures the similarity between the points. The weight matrix, $W$, corresponding to the proximity graph $G$ is then defined by $W_{i,j} = K(x_i,x_j)$. The nonzero entries correspond to the similarity between pairs of points that are connected by an edge in $G$. Diagonal entries, $W_{i,i}$, correspond to the ``self-similarity" of each point $x_i$, and the off-diagonal entries, $W_{i,j}$, correspond to the similarity between pairs of points $x_i$ and $x_j$. By using a kernel function to define the weights of the edges, proximity graphs can capture underlying geometric relationships between the data points, making them suitable for a wide range of applications in machine learning and data analysis.
-\textcolor{red}{We need to include an equation that shows the relationship of a radius in constructing the Proximity graph, with maybe some short explanation as to that radius}
-\subsubsection{K-Nearest Neighbor}
-K-Nearest Neighbor (K-NN) graphs are a type of proximity graph for which edge weights are determined exclusively by the nearest neighbors of a given vertex. Given a set of $n$ vertices $V = \{x_1, x_2, ..., x_n\}$ in a metric space, the K-NN graph $G_k = (V, W)$ is constructed as follows: for each point $x_i$, its $k$-nearest neighbors are found according to some distance metric, and edges of weight $1$ are added between $x_i$ and each of its $k$-nearest neighbors. In other words, $x_i$ is adjacent to the $k$ vertices that are closest to it in the data set.
-\textcolor{red}{Include more than just the uniform kernel, really assign the weights according to a non-increasing weight function}
-
-K-NN graphs have several advantages over other types of proximity graphs. One of these advantages is that on average, vertices have relatively low degree, so the weight matrix $W$ is often sparse. This increases the performance of graphical methods. Moreover, K-NN graphs are easy to construct and can be used in a wide range of applications, such as clustering, classification, and anomaly detection.
+\subsection{Proximity Graphs}
+Given a set of points $\{x_1, x_2, \dots, x_n\}$ in a metric space, we can construct a proximity graph $G = (V, W)$, where $V = \{v_1, v_2, \dots, v_n\}$ is a set of vertices representing the points, and $W$ is an adjacency matrix whose entries 
+\[W_{ij} = \begin{cases}
+  \eta(x_i,x_j) \quad&\text{if } d(x_i,x_j) < r, \\
+  0 \quad&\text{otherwise},
+\end{cases}\]
+where $\eta\colon X\times X \to \R$ is a non-increasing function and $r > 0$ is the maximum radius within which vertices can be adjacent, represent the weights of the edges between pairs of vertices.
+\subsection{K-Nearest Neighbor Graphs}
+K-Nearest Neighbor (K-NN) graphs are a class of graphs within which vertices are adjacent to a fixed number of other vertices. The K-NN graph $G_k = (V, W)$ is constructed as follows: for each vertex $v_i$, its $k$-nearest neighbors are found according to some distance metric, and edges of weight $\eta(x_1,x_2)$ are added between $v_i$ and each of its $k$-nearest neighbors. In other words, $v_i$ is adjacent to the $k$ vertices that are closest to it in the data set. The primary advantage of using K-NN graphs is that on average, vertices have relatively low degree, so the weight matrix $W$ is often sparse, increasing the performance of graphical methods.
 
 \subsection{Graph Laplacian}
 Given a graph $G = (V, W)$, we can define a graph Laplacian $L$ as a matrix that captures the pairwise relationships between data points on the graph. Specifically, we can construct the unnormalized graph Laplacian $L$ as follows:
 $$ L = D - W, $$
-where $D$ is the diagonal degree matrix. The degree of a vertex is the sum of the weights of the edges adjacent to the vertex. We note that if $G$ has $M$ connected components, then $\mathrm{dim}(\mathrm{Null}(L))=M$. Thus, we simply need to determine the multiplicity of the zero eigenvalue of $L$ to determine the number of clusters in the data.
-
-One common variant of the graph Laplacian is the normalized Laplacian, which is defined as:
-$$ L_{\text{sym}} = D^{-1/2} L D^{-1/2}. $$
-The normalized Laplacian satisfies the important property that its eigenvalues are in the range $[0, 2]$, which allows for efficient algorithms and analysis. Though there are desired properties, for our applications, the unnormalized Laplacian is sufficient and easier to compute.
+where $D$ is the diagonal degree matrix defined by
+\[D_{ii} = \sum_{j = 1}^n W_{ij}.\]
+If $G$ has $M$ connected components, then $\mathrm{dim}(\mathrm{Null}(L))=M$. Thus, we only need to find the multiplicity of the zero-eigenvalue of $L$ to determine the number of clusters in the data.
 \begin{comment}
 In GSSL, we can use the Laplacian to propagate labels from a small set of labeled data points to the entire graph, by solving the following optimization problem:
 $$ \min_f \sum_i L_{ii} (f_i - y_i)^2 + \lambda \sum_{i,j} W_{ij} (f_i - f_j)^2, $$
 where $y_i$ is the label for the $i$-th labeled point, $f_i$ is the predicted label for the $i$-th point, and $\lambda$ is a regularization parameter that controls the smoothness of the solution. 
 \end{comment}
 
-\subsection{Types of Kernels}
-\subsubsection{Mat\'{e}rn Family}
+\subsection{Mat\'{e}rn Family of Kernels}
 
-\subsection{GSSL Algorithms}
-\subsubsection{The Probit Method}
+\subsection{The Probit Method}\label{Sec:Probit}
 The probit method is a statistical technique used for modeling binary response variables. We assume
 \[y_j = \mathrm{sign}(f(x_j) + \epsilon_j),\]
 for some latent function $f$, where $\epsilon_j\iid \psi$, for some probability density $\psi$. Assume $\psi$ is symmetric, so that
@@ -94,8 +84,12 @@ where $\Psi$ is the cumulative distribution function (CDF) of $\psi$. By the sam
 \[\mathbb{P}(y  \mid f) = \prod_{j = 1}^n \Psi(y_jf(x_j)).\]
 For a function $f$, we want our loss function to be large when the signs of $f(x_j)$ and $y_j$  disagree, so we define our probit loss:
 \[L(f) = -\log(\mathbb{P}(y\mid f)) = -\sum_{j = 1}^n \Psi(y_jf(x_j)).\]
-Finally, we add a regularization term based on the RKHS norm to define our optimization problem:
-\[f^* = \argmin_{f \in \R^{m}} \mathcal{L}(f,y) + \lambda f^{T}C^{-1}f\]
+Finally, we add a regularization term based on the RKHS norm \textcolor{red}{NEED TO TALK HERE ABOUT C} to define our optimization problem for the probit method:
+\[f^* = \argmin_{f \in \R^{m}} L(f) + \lambda f^{T}C^{-1}f\]
+
+\subsection{Regression}
+Instead of using the probit model, we can instead use the simpler regression loss:
+\[L(f) = \sum_{j = 1}^n \abs{f_j - y_j}^2.\]
 
 
 \begin{comment}
@@ -113,10 +107,6 @@ Spectral clustering is a clustering technique that uses the eigenvectors of a ma
 \end{comment}
 
 \section{Methods}
-Write about what it is we are actually going to do
-
-\section{Methods}
-In this section, we describe our process for performing GSSL on several subproblems.
 
 \subsection{General Procedure}
 \begin{enumerate}
@@ -135,61 +125,57 @@ We now perform our general GSSL procedure on three different subproblems: three 
 
 \subsection{Clusters on $\mathbb{R}^2$}\label{Sec:3Clus}
 
-We begin by generating the points to form well-separated clusters in $\mathbb{R}^2$. These clusters are formed by specifying the centers of the clusters, the number of points in each distribution, and a covariance matrix. We demonstrate our results by choosing 3 clusters centered around $(0,0)$, $(1,0)$, and $(1,1)$, with 100 points in each cluster.
-The points in the cluster centered around $(0,0)$ have true label $+1$, while the points in the other two clusters have true label $-1$. One point in each cluster is then assigned its true label. Only these three assigned points will be used in our GSSL loss function. A plot of the clusters formed using this process is shown in Figure~\ref{Fig:Dis3ClusOg}.
+We begin by generating the points to form well-separated clusters in $\mathbb{R}^2$. These clusters are formed by specifying the mean and a covariance matrix and the points are distributed normally. We demonstrate our results by choosing 3 clusters centered around $(0,0)$, $(1,0)$, and $(1,1)$, with 100 points in each cluster. One point in each cluster is then assigned its true label. Only these three assigned points will be used in our GSSL loss function. A plot of the clusters formed using this process is shown in Figure \ref{Fig:Dis3ClusOg}.
+
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{Figures/Dis3ClusOG.png}
     \caption{
-        Plot of the 3 well-separated clusters; the yellow points represent a label of $+1$, while purple points represent a label of $-1$. The red points indicate the points for which the label is known. 
-    }
+        Plot of the 3 well-separated clusters; the yellow points represent a label of $+1$, while purple points represent a label of $-1$. The red points indicate the points for which the label is known.}
 	\label{Fig:Dis3ClusOg}
 \end{figure}
 
-We next use the data to construct a graph on the points. There are several choices to be made here, including the choice of weight functions, parameters, and type of graph. In this case, we explore two types of graphs: a K-NN approach and a full proximity graph approach. We begin by examining a K-NN approach using a uniform kernel. This allows us to create a disconnected graph with 3 connected clusters. Such a graph constructed using this approach is shown in Figure~\ref{Fig:Dis3ClusKNN}. Note that blue points indicate an unknown label, while red labels indicate known labels.
+We next use the data to construct a graph on the points. There are several choices to be made here, including the choice of weight function (and its parameters) and the type of graph. In this case, we explore two types of graphs: K-NN with uniform weight function and proximity with Gaussian weights. We begin by examining the K-NN approach. This allows us to create a disconnected graph with 3 connected clusters. Such a graph constructed using this approach is shown in Figure \ref{Fig:Dis3ClusKNN}.
+
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{Figures/Dis3ClusKNN.png}
+    \begin{subfigure}[b]{0.475\textwidth}
+      \includegraphics[width=\textwidth]{Figures/Dis3ClusKNN.png}
+      \caption{K-NN Approach}
+      \label{Fig:Dis3ClusKNN}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.475\textwidth}
+      \includegraphics[width=\textwidth]{Figures/Dis3ClusProx.png}
+      \caption{Proximity Approach}
+      \label{Fig:Dis3ClusProx}
+    \end{subfigure}
     \caption{
-        Plot of the graph constructed on the unlabelled data from Figure~\ref{Fig:Dis3ClusOg} when using a K-NN approach with a uniform kernel. Blue points indicate an unknown label, while red labels indicate known labels. 
+        Plot of the graphs constructed on the unlabelled data from Figure \ref{Fig:Dis3ClusOg}. Blue points indicate an unknown label, while red labels indicate known labels. The darker the shade of the edge, the higher its weight is.
     }
-	\label{Fig:Dis3ClusKNN}
 \end{figure}
-We then perform our GSSL algorithm with both the Probit loss function as described in Section~\ref{Sec:Probit} and the regression loss function, which is given by 
-\[L(f)=\sum_{j}(y_j-f_j)^2.\]
-We note that since the clusters in this case are completely disconnected that it was not necessary to tune any parameters in order to achieve an accuracy of 100\% using both loss functions. For each of these loss functions, we choose the following parameters: $\tau=1$, $\alpha=2$, and $\lambda=\frac{\tau^{2\alpha}}{2}$. Plots of the predicted labels using both the probit and regression loss functions are shown in Figure~\ref{Fig:Dis3ClusKNNRes}.
+
+We then perform our GSSL algorithm with both the Probit loss function and the regression loss function. Since the clusters in this case are completely disconnected that it was not necessary to tune any parameters in order to achieve an accuracy of 100\% using both loss functions. For each of these loss functions, we choose the following parameters: $\tau=1$, $\alpha=2$, and $\lambda=\frac{\tau^{2\alpha}}{2}$. Plots of the predicted labels using both the probit and regression loss functions are shown in Figure \ref{Fig:Dis3ClusKNNRes}.
+
     \begin{figure}[ht] 
   \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/Dis3ClusKNNPro.png} 
-    \caption{Probit Loss Function} 
+    \caption{Probit Loss} 
     \label{Fig:Dis3ClusKNNPro} 
   \end{subfigure}%% 
   \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/Dis3ClusKNNReg.png} 
-    \caption{Regression Loss Function} 
+    \caption{Regression Loss} 
     \label{Fig:Dis3ClusKNNReg} 
   \end{subfigure} 
-  \caption{Plot of the predicted labels for the K-NN graph in Figure~\ref{Fig:Dis3ClusKNN} and proximity graph in Figure~\ref{Fig:Dis3ClusProx}
+  \caption{Plot of the predicted labels for the K-NN graph in Figure \ref{Fig:Dis3ClusKNN} and proximity graph in Figure \ref{Fig:Dis3ClusProx}
   using only the known labels.}
   \label{Fig:Dis3ClusKNNRes}
 \end{figure}
-From Figure~\ref{Fig:Dis3ClusKNNRes}, we can see that our predicted labels are exactly those as our known labels, indicating that our GSSL was successful in this case. 
 
-We now repeat the process with a full proximity graph approach. In this case, we construct a proximity graph using the RBF kernel. This allows us to create a fully connected graph in which the connections between the clusters are of $O(\epsilon)$. Usage of the RBF kernel requires tuning the $\gamma$ parameter to obtain the best results. We accomplish this with cross validation on the eigenvalues of the resulting graph Laplacian matrix. Since we expect three distinct clusters, there should be a large gap between the third and fourth eigenvalues. With the RBF kernel tuned, the proximity graph is shown in Figure~\ref{Fig:Dis3ClusProx} is produced.
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{Figures/Dis3ClusProx.png}
-    \caption{
-        Plot of the graph constructed on the unlabelled data from Figure~\ref{Fig:Dis3ClusOg} when using a full proximity graph approach with the RBF kernel. Note that the darker the shade of the edge, the higher its weight is. Note that this graph is fully connected with weights between clusters that are difficult to make out due to them having weight of $O(\epsilon)$.
-    }
-	\label{Fig:Dis3ClusProx}
-\end{figure}
+We repeat the process with the proximity approach. We create a fully connected graph in which the connections between the clusters are of $O(\epsilon)$. Usage of the RBF kernel requires tuning the (length scale). We accomplish this by starting with the first quartile of pairwise distances between points and using cross validation on the eigenvalues of $L$ to further tune. We expect three distinct clusters, so there should be a gap between the third and fourth eigenvalues. With the RBF kernel tuned, the proximity graph is shown in Figure \ref{Fig:Dis3ClusProx} is produced. Here, it was necessary to tune $\tau$, so that it is $O(\sqrt{\epsilon})$. Doing this resulted in 100\% accuracy for both loss functions and thus produced the same plots as shown in Figure \ref{Fig:Dis3ClusKNNRes}. To ensure that our accuracy results were consistent, we computed the average accuracy over 50 trials of each of the cases. These results are shown in Table \ref{Table:3ClusRes}.
 
-We then perform our GSSL algorithm. Here, it was necessary to tune the $\tau$ parameter, so that it is $O(\sqrt{\epsilon})$. Doing this resulted in 100\% accuracy for both loss functions and thus produced the same plots as shown in Figure~\ref{Fig:Dis3ClusKNNRes}.
-
-To ensure that our accuracy results were consistent, we computed the average accuracy over 50 trials of each of the cases described above. The results of this are shown in Table~\ref{Table:3ClusRes}.
 \begin{table}
 \begin{center}
 \begin{tabular}{||c c c||} 
@@ -212,17 +198,17 @@ To ensure that our accuracy results were consistent, we computed the average acc
 
 \subsection{Clusters on the Swiss Roll}
 
-Consider the swiss roll manifold described by $(x,y) = (t\cos(t), t\sin(t))$. We begin by generating points to form well-separated clusters on this manifold. These clusters are formed by specifying a range of $t$-values for which each cluster will be defined, a variance for how far the points will vary from the true manifold, and the number of points to be generated. We demonstrate our results by choosing 3 clusters in the $t$-ranges $[\pi,5\pi/2]$, $[3\pi,7\pi/2]$, and $[4\pi,9\pi/2]$, respectively with a variance of 1. The cluster from $t=[\pi,5\pi/2]$ has 200 points and have true label $+1$, while the other two clusters each have 100 points and have true label $-1$. Two points in each cluster are then assigned its true label. We then further assigned two more points in the cluster labelled $+1$ their true label to ensure that each label is assigned equal numbers of true labels. This is done to avoid majority labelling, which resulted in poor accuracy when not accounted for. A plot of the clusters formed using this process is shown in Figure~\ref{Fig:SpiOg}.
+Consider the Swiss roll manifold described by $(x,y) = (t\cos(t), t\sin(t))$. We begin by generating points to form well-separated clusters on this manifold. These clusters are formed by specifying a range of $t$-values for which each cluster will be defined, a variance for how far the points will vary from the true manifold, and the number of points to be generated. To avoid majority labelling we ensure that there are the same number of points labeled for each class. A plot of the clusters formed using this process is shown in Figure~\ref{Fig:SpiOg}.
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{Figures/SpiOg.png}
     \caption{
-        Plot of the 3 clusters on the Swiss roll manifold with $t$-ranges $[\pi,5\pi/2]$, $[3\pi,7\pi/2]$, and $[4\pi,9\pi/2]$. The blue sprial represents the true swiss roll manifold for which our clusters are generated around.
+        Plot of the 3 clusters on the Swiss roll manifold with $t$-ranges $[\pi,5\pi/2]$, $[3\pi,7\pi/2]$, and $[4\pi,9\pi/2]$ with variance $1$. The blue sprial represents the true swiss roll manifold for which our clusters are generated around.
     }
 	\label{Fig:SpiOg}
 \end{figure}
 
-We choose to construct three different types of graphs for this example: a K-NN graph with a uniform kernel, a K-NN graph with the RBF kernel, and a proximity graph with the RBF kernel. We tune the parameters for all of these approaches using the method descirbed in the previous section. Graphs formed using each of these techniques is shown in Figure~\ref{Fig:SpiGraphs}.
+We choose to construct three different types of graphs for this example: a K-NN graph with uniform weights, a K-NN graph with the Gaussian weights, and a proximity graph with Gaussian weights. We tune the parameters for all of these approaches using the method described previously. Graphs formed using each of these techniques is shown in Figure \ref{Fig:SpiGraphs}.
     \begin{figure}[ht] 
   \begin{subfigure}{0.475\linewidth}
     \centering
@@ -245,49 +231,49 @@ We choose to construct three different types of graphs for this example: a K-NN 
   \caption{Plot of the graphs formed for the data in Figure~\ref{Fig:SpiOg}. Each subfigure shows a different graph forming technique.}
   \label{Fig:SpiGraphs} 
 \end{figure}
-
-We then perform our GSSL algorithm with both the Probit loss function as described in Section~\ref{Sec:Probit} and the regression loss function given in Section~\ref{Sec:3Clus}. Plots of the predicted labels using both the probit and regression loss functions for each type of graph are shown in Figure~\ref{Fig:SpiPred}.
+We then perform our GSSL algorithm with both the Probit loss and regression loss. Plots of the predicted labels using both the Probit and regression loss functions for each type of graph are shown in Figure \ref{Fig:SpiPred}.
     \begin{figure}[ht] 
   \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/SpiKNNUniPro.png} 
-    \caption{K-NN with uniform kernel: Probit} 
+    \caption{K-NN with uniform weights: Probit} 
     \label{Fig:SpiKNNUniPro} 
   \end{subfigure}%% 
   \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/SpiKNNUniReg.png} 
-    \caption{K-NN with uniform kernel: Regression} 
+    \caption{K-NN with uniform weights: Regression} 
     \label{Fig:SpiKNNUniReg} 
   \end{subfigure} 
     \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/SpiKNNRBFPro.png} 
-    \caption{K-NN with RBF kernel: Probit} 
+    \caption{K-NN with Gaussian weights: Probit} 
     \label{Fig:SpiKNNRBFPro} 
   \end{subfigure} 
       \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/SpiKNNRBFReg.png} 
-    \caption{K-NN with RBF kernel: Regression} 
+    \caption{K-NN with Gaussian weights: Regression} 
     \label{Fig:SpiKNNRBFReg} 
   \end{subfigure}
       \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/SpiProxPro.png} 
-    \caption{Proximity with RBF kernel: Probit} 
+    \caption{Proximity with Gaussian weights: Probit} 
     \label{Fig:SpiProxPro} 
   \end{subfigure}
       \begin{subfigure}{0.475\linewidth}
     \centering
     \includegraphics[width=0.8\linewidth]{Figures/SpiProxReg.png} 
-    \caption{Proximity with RBF kernel: Regression} 
+    \caption{Proximity with Gaussian weights: Regression} 
     \label{Fig:SpiProxReg} 
   \end{subfigure}
-  \caption{Plot of the predicted labels for the clusters generated on the Swiss Roll manifold using the graphs generated in Figure~\ref{Fig:SpiGraphs}. }
+  \caption{Plot of the predicted labels for the clusters generated on the Swiss roll manifold using the graphs generated in Figure \ref{Fig:SpiGraphs}. }
   \label{Fig:SpiPred} 
 \end{figure}
-The accuracies of the predicted labels compared to the true labels for each type of graph and each loss function is shown in Table~\ref{Table:SpiRes}.
+The accuracies of the predicted labels compared to the true labels for each type of graph and each loss function is shown in Table \ref{Table:SpiRes}.
+
 \begin{table}
 \begin{center}
 \begin{tabular}{||c c c c||} 
@@ -307,18 +293,19 @@ The accuracies of the predicted labels compared to the true labels for each type
  Proximity with RBF kernel & Regression & 63.00\% & N/A\\
  \hline
 \end{tabular}
-\caption{Accuracy of predicted labels over 1 run and average accuracy over 50 runs for 3 different types of graphs using both probit and regression loss functions. Note that we did not perform 50 trials for the proximity graph with the RBF kernel as this approach performed very poorly in our initial tests.}
+\caption{Accuracy of predicted labels over 1 run and average accuracy over 50 runs for 3 different types of graphs using both probit and regression loss functions. Note that we did not perform 50 trials for the proximity graph with the Gaussian weights as this approach performed poorly in our initial tests.}
 \label{Table:SpiRes}
 \end{center}
 \end{table}
-We can see from Figure~\ref{Fig:SpiPred} and Table~\ref{Table:SpiRes} that the proximity graph with the RBF kernel performs extremely poorly in comparison with both of the K-NN kernels that both have over $90\%$ accuracy. As such, we proceed only with the two K-NN graphs. To ensure the consistency of the success of the K-NN kernels, we computed the average accuracy over 50 trials for the two K-NN graphs with both the probit and regression loss functions. The average accuracy of over these 50 trials are shown in Table~\ref{Table:SpiRes}. 
+We can see from Figure \ref{Fig:SpiPred} and Table \ref{Table:SpiRes} that the proximity graph with the RBF kernel performs poorly in comparison with both of the K-NN graphs that both have over $90\%$ accuracy. Thus, we proceed only with the two K-NN graphs. To ensure the consistency of the success of the K-NN kernels, we computed the average accuracy over 50 trials for the two K-NN graphs with both the probit and regression loss functions. The average accuracy of over these 50 trials are shown in Table \ref{Table:SpiRes}. 
 
 \subsection{MNIST Data}
+We now consider applying our GSSL algorithm to real data. In this case, we consider a subset of the MNIST data set. In particular, we look at 500 randomly chosen images from the complete set of 0s and 1s. We assigned each 0 a true label of -1 and each 1 a true label of 1. Thirty points in the data set are then assigned their true label. We next construct a K-NN graph with Gaussian weights. We then perform our GSSL algorithm with both the Probit and regression loss functions. After cross-validation, we found that the ideal parameters were given by: $\gamma=0.04$, $\tau=1$, $\alpha=2$, and $\lambda=\tau^{2\alpha}/2$. These parameters resulted in the formation of two clusters, as desired. Our approach predicted labels with $89.6\%$ accuracy for the Probit loss function and $90.8\%$ accuracy for the regression loss function, showing that our approach is effective on real data.
 
 \section{Conclusion}
 
-
+\nocite{hoffmann, borovitskiy, sanz-alonso}
 \bibliographystyle{plain}
-\bibliography{refs}
+\bibliography{bibliography_file}
 
 \end{document}

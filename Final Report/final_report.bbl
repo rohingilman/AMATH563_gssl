@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{borovitskiy}
+Viacheslav Borovitskiy, Iskander Azangulov, Alexander Terenin, Peter Mostowsky,
+  Marc~Peter Deisenroth, and Nicolas Durrande.
+\newblock Mat\'ern {Gaussian} processes on graphs, April 2021.
+
+\bibitem{hoffmann}
+Franca Hoffmann, Bamdad Hosseini, Zhi Ren, and Andrew~M. Stuart.
+\newblock Consistency of semi-supervised learning algorithms on graphs:
+  {Probit} and one-hot methods, March 2020.
+
+\bibitem{sanz-alonso}
+Daniel Sanz-Alonso and Ruiyi Yang.
+\newblock The {SPDE} approach to {Mat\'ern} fields: Graph representations,
+  April 2021.
+
+\end{thebibliography}
