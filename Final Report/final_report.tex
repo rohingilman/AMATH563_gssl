@@ -66,7 +66,20 @@ $$ \min_f \sum_i L_{ii} (f_i - y_i)^2 + \lambda \sum_{i,j} W_{ij} (f_i - f_j)^2,
 where $y_i$ is the label for the $i$-th labeled point, $f_i$ is the predicted label for the $i$-th point, and $\lambda$ is a regularization parameter that controls the smoothness of the solution. 
 \end{comment}
 
-\subsection{Mat\'{e}rn Family of Kernels}
+\subsection{Matérn Family of Kernels}
+We define the Matérn kernel as
+\[
+  K(x,y) = \kappa(\norm{x-y}), \kappa(t) = \frac{2^{1-\nu}}{\Gamma(\nu)}\paren{\sqrt{2\nu}\frac{t}{\gamma}}K_{\nu}\paren{\sqrt{2\nu}\frac{t}{\gamma}}
+\]
+where $\Gamma$ is the Gamma function, $K_{\nu}$ is the modified Bessel function of the second kind, $\nu$ is a smoothness index, and $\gamma$ is the length scale. It has been shown that Matérn kernels on Gaussian Processes satisfy the PDE 
+\[
+  \paren{\frac{2\nu}{\gamma ^2} + \Delta}^{\frac{\nu}{2} + \frac{d}{4}}
+\]
+where $d$ is the dimension of $x,y$ and $\Delta$ is the Laplacian operator. On graphs, obviously in the finite setting, after redefining variables the discrete Matérn kernel is then defined as
+\[
+  C = \paren{L + \tau^2 I}^{-\alpha}
+\]
+where $L$ is the graph Laplacian matrix, and $\tau$, $\alpha$ are refactored terms.
 
 \subsection{The Probit Method}\label{Sec:Probit}
 The probit method is a statistical technique used for modeling binary response variables. We assume
@@ -84,8 +97,9 @@ where $\Psi$ is the cumulative distribution function (CDF) of $\psi$. By the sam
 \[\mathbb{P}(y  \mid f) = \prod_{j = 1}^n \Psi(y_jf(x_j)).\]
 For a function $f$, we want our loss function to be large when the signs of $f(x_j)$ and $y_j$  disagree, so we define our probit loss:
 \[L(f) = -\log(\mathbb{P}(y\mid f)) = -\sum_{j = 1}^n \Psi(y_jf(x_j)).\]
-Finally, we add a regularization term based on the RKHS norm \textcolor{red}{NEED TO TALK HERE ABOUT C} to define our optimization problem for the probit method:
-\[f^* = \argmin_{f \in \R^{m}} L(f) + \lambda f^{T}C^{-1}f\]
+Finally, we add a regularization term based on the RKHS norm to define our optimization problem for the probit method:
+\[f^* = \argmin_{f \in \R^{m}} L(f) + \lambda f^{T}C^{-1}f.\]
+Here, $C$ is as defined in section 2.4. Since $C$ is defined from the graph Laplacian matrix, the optimization problem thus includes spectral information of $L$, hence embedding geometric cluster information in the assigning of labels when such a minimizing function is found.
 
 \subsection{Regression}
 Instead of using the probit model, we can instead use the simpler regression loss:
