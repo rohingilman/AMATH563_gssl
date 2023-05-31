@@ -1118,7 +1118,6 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\eps
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -1145,7 +1144,6 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti9.tfm
 INPUT .\Figures\Dis3ClusOG.png
 INPUT .\Figures\Dis3ClusOG.png
 INPUT Figures\Dis3ClusOG.png
@@ -1264,8 +1262,6 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dp
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
@@ -1290,7 +1286,5 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\ams
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti9.pfb
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti9.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

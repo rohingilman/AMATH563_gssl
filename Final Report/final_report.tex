@@ -26,7 +26,7 @@
 \newcommand{\iid}{\overset{\mathrm{iid}}{\sim}}
 
 
-\title{GSSL Project Report \emph{(should change this)}}
+\title{Graphical Semi-Supervised Learning}
 
 \author{Rohin Gilman \and Alex Johnson \and Kaitlynn Lilly}
 
@@ -34,7 +34,7 @@
 \begin{document}
 
 \begin{abstract}
-	To be written last
+    We investigate graphical semi-supervised learning approaches and benchmark both Probit and regression models on various manifolds. We construct data on well-separated clusters in the plane, weakly connected clusters on a spiral manifold, and examine data from the MNIST data set. We find that these approaches are generally effective, but can be limited by the underlying data and choices made in model construction.
 \end{abstract}
 
 \maketitle
@@ -302,7 +302,8 @@ We can see from Figure \ref{Fig:SpiPred} and Table \ref{Table:SpiRes} that the p
 \subsection{MNIST Data}
 We now consider applying our GSSL algorithm to real data. In this case, we consider a subset of the MNIST data set. In particular, we look at 500 randomly chosen images from the complete set of 0s and 1s. We assigned each 0 a true label of -1 and each 1 a true label of 1. Thirty points in the data set are then assigned their true label. We next construct a K-NN graph with Gaussian weights. We then perform our GSSL algorithm with both the Probit and regression loss functions. After cross-validation, we found that the ideal parameters were given by: $\gamma=0.04$, $\tau=1$, $\alpha=2$, and $\lambda=\tau^{2\alpha}/2$. These parameters resulted in the formation of two clusters, as desired. Our approach predicted labels with $89.6\%$ accuracy for the Probit loss function and $90.8\%$ accuracy for the regression loss function, showing that our approach is effective on real data.
 
-\section{Conclusion}
+\section{Conclusions}
+Graphical semi-supervised learning is a useful tool that combines the strengths of both supervised and unsupervised learning methods. Using information from both labeled and unlabeled data allows for the development of robust machine learning models that require less information than traditional approaches. However, this approach is not without its limitations. The quality of the graph construction, the choice of kernel, and the selection of labeled points all have an impact on the final performance of the model.
 
 \nocite{hoffmann, borovitskiy, sanz-alonso}
 \bibliographystyle{plain}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  29 MAY 2023 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  30 MAY 2023 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -738,7 +738,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  [1{C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5036) has occurred while \output is active []
 
  [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -756,80 +756,80 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 128.
 
-<Figures/Dis3ClusOG.png, id=105, 396.35577pt x 296.60812pt>
+<Figures/Dis3ClusOG.png, id=103, 396.35577pt x 296.60812pt>
 File: Figures/Dis3ClusOG.png Graphic file (type png)
 <use Figures/Dis3ClusOG.png>
 Package pdftex.def Info: Figures/Dis3ClusOG.png  used on input line 132.
 (pdftex.def)             Requested size: 234.8775pt x 175.7712pt.
-<Figures/Dis3ClusKNN.png, id=108, 395.22656pt x 292.46765pt>
+<Figures/Dis3ClusKNN.png, id=106, 395.22656pt x 292.46765pt>
 File: Figures/Dis3ClusKNN.png Graphic file (type png)
 <use Figures/Dis3ClusKNN.png>
 Package pdftex.def Info: Figures/Dis3ClusKNN.png  used on input line 143.
 (pdftex.def)             Requested size: 223.13649pt x 165.11957pt.
-<Figures/Dis3ClusProx.png, id=109, 402.37828pt x 289.08pt>
+<Figures/Dis3ClusProx.png, id=107, 402.37828pt x 289.08pt>
 File: Figures/Dis3ClusProx.png Graphic file (type png)
 <use Figures/Dis3ClusProx.png>
 Package pdftex.def Info: Figures/Dis3ClusProx.png  used on input line 148.
 (pdftex.def)             Requested size: 223.13649pt x 160.30455pt.
 [4]
-<Figures/Dis3ClusKNNPro.png, id=123, 397.8614pt x 295.47891pt>
+<Figures/Dis3ClusKNNPro.png, id=121, 397.8614pt x 295.47891pt>
 File: Figures/Dis3ClusKNNPro.png Graphic file (type png)
 <use Figures/Dis3ClusKNNPro.png>
 Package pdftex.def Info: Figures/Dis3ClusKNNPro.png  used on input line 162.
 (pdftex.def)             Requested size: 178.50987pt x 132.57202pt.
-<Figures/Dis3ClusKNNReg.png, id=124, 396.35577pt x 293.22047pt>
+<Figures/Dis3ClusKNNReg.png, id=122, 396.35577pt x 293.22047pt>
 File: Figures/Dis3ClusKNNReg.png Graphic file (type png)
 <use Figures/Dis3ClusKNNReg.png>
 Package pdftex.def Info: Figures/Dis3ClusKNNReg.png  used on input line 168.
 (pdftex.def)             Requested size: 178.50987pt x 132.05983pt.
  [5 <./Figures/Dis3ClusOG.png> <./Figures/Dis3ClusKNN.png> <./Figures/Dis3ClusProx.png>]
-<Figures/SpiOg.png, id=141, 446.41782pt x 331.99031pt>
+<Figures/SpiOg.png, id=139, 446.41782pt x 331.99031pt>
 File: Figures/SpiOg.png Graphic file (type png)
 <use Figures/SpiOg.png>
 Package pdftex.def Info: Figures/SpiOg.png  used on input line 204.
 (pdftex.def)             Requested size: 234.8775pt x 174.67238pt.
  [6 <./Figures/Dis3ClusKNNPro.png> <./Figures/Dis3ClusKNNReg.png>]
-<Figures/SpiKNNUni.png, id=152, 451.6875pt x 338.01282pt>
+<Figures/SpiKNNUni.png, id=150, 451.6875pt x 338.01282pt>
 File: Figures/SpiKNNUni.png Graphic file (type png)
 <use Figures/SpiKNNUni.png>
 Package pdftex.def Info: Figures/SpiKNNUni.png  used on input line 215.
 (pdftex.def)             Requested size: 178.50987pt x 133.58838pt.
-<Figures/SpiKNNRBF.png, id=153, 448.29985pt x 334.24875pt>
+<Figures/SpiKNNRBF.png, id=151, 448.29985pt x 334.24875pt>
 File: Figures/SpiKNNRBF.png Graphic file (type png)
 <use Figures/SpiKNNRBF.png>
 Package pdftex.def Info: Figures/SpiKNNRBF.png  used on input line 221.
 (pdftex.def)             Requested size: 178.50987pt x 133.09529pt.
-<Figures/SpiProx.png, id=154, 448.67625pt x 333.87234pt>
+<Figures/SpiProx.png, id=152, 448.67625pt x 333.87234pt>
 File: Figures/SpiProx.png Graphic file (type png)
 <use Figures/SpiProx.png>
 Package pdftex.def Info: Figures/SpiProx.png  used on input line 227.
 (pdftex.def)             Requested size: 178.50987pt x 132.83334pt.
-<Figures/SpiKNNUniPro.png, id=158, 452.0639pt x 331.99031pt>
+<Figures/SpiKNNUniPro.png, id=156, 452.0639pt x 331.99031pt>
 File: Figures/SpiKNNUniPro.png Graphic file (type png)
 <use Figures/SpiKNNUniPro.png>
 Package pdftex.def Info: Figures/SpiKNNUniPro.png  used on input line 238.
 (pdftex.def)             Requested size: 178.50987pt x 131.09166pt.
-<Figures/SpiKNNUniReg.png, id=159, 453.19313pt x 333.11954pt>
+<Figures/SpiKNNUniReg.png, id=157, 453.19313pt x 333.11954pt>
 File: Figures/SpiKNNUniReg.png Graphic file (type png)
 <use Figures/SpiKNNUniReg.png>
 Package pdftex.def Info: Figures/SpiKNNUniReg.png  used on input line 244.
 (pdftex.def)             Requested size: 178.50987pt x 131.21225pt.
-<Figures/SpiKNNRBFPro.png, id=160, 447.92343pt x 335.00156pt>
+<Figures/SpiKNNRBFPro.png, id=158, 447.92343pt x 335.00156pt>
 File: Figures/SpiKNNRBFPro.png Graphic file (type png)
 <use Figures/SpiKNNRBFPro.png>
 Package pdftex.def Info: Figures/SpiKNNRBFPro.png  used on input line 250.
 (pdftex.def)             Requested size: 178.50987pt x 133.50241pt.
-<Figures/SpiKNNRBFReg.png, id=161, 450.55829pt x 333.87234pt>
+<Figures/SpiKNNRBFReg.png, id=159, 450.55829pt x 333.87234pt>
 File: Figures/SpiKNNRBFReg.png Graphic file (type png)
 <use Figures/SpiKNNRBFReg.png>
 Package pdftex.def Info: Figures/SpiKNNRBFReg.png  used on input line 256.
 (pdftex.def)             Requested size: 178.50987pt x 132.27805pt.
-<Figures/SpiProxPro.png, id=162, 450.9347pt x 333.11954pt>
+<Figures/SpiProxPro.png, id=160, 450.9347pt x 333.11954pt>
 File: Figures/SpiProxPro.png Graphic file (type png)
 <use Figures/SpiProxPro.png>
 Package pdftex.def Info: Figures/SpiProxPro.png  used on input line 262.
 (pdftex.def)             Requested size: 178.50987pt x 131.87303pt.
-<Figures/SpiProxReg.png, id=163, 448.29985pt x 332.74312pt>
+<Figures/SpiProxReg.png, id=161, 448.29985pt x 332.74312pt>
 File: Figures/SpiProxReg.png Graphic file (type png)
 <use Figures/SpiProxReg.png>
 Package pdftex.def Info: Figures/SpiProxReg.png  used on input line 268.
@@ -839,20 +839,20 @@ Underfull \vbox (badness 3439) has occurred while \output is active []
 
  [8 <./Figures/SpiKNNUni.png> <./Figures/SpiKNNRBF.png> <./Figures/SpiProx.png>] [9 <./Figures/SpiKNNUniPro.png> <./Figures/SpiKNNUniReg.png> <./Figures/SpiKNNRBFPro.png> <./Figures/SpiKNNRBFReg.png> <./Figures/SpiProxPro.png> <./Figures/SpiProxReg.png>] (final_report.bbl) [10] (final_report.aux)
 Package rerunfilecheck Info: File `final_report.out' has not changed.
-(rerunfilecheck)             Checksum: 7F2AA62227C5843E018CEF5310FEE7FB;2614.
+(rerunfilecheck)             Checksum: 9BC1A40DF705A15279F9252A7F80DC39;2619.
  ) 
 Here is how much of TeX's memory you used:
- 26370 strings out of 478659
- 491896 string characters out of 2842566
- 774699 words of memory out of 3000000
- 43792 multiletter control sequences out of 15000+600000
- 413678 words of font info for 73 fonts, out of 8000000 for 9000
+ 26366 strings out of 478659
+ 491853 string characters out of 2842566
+ 774681 words of memory out of 3000000
+ 43790 multiletter control sequences out of 15000+600000
+ 412974 words of font info for 71 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  84i,9n,89p,1078b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi720\esint10.pk><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on final_report.pdf (10 pages, 2766065 bytes).
+ <C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi720\esint10.pk><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on final_report.pdf (10 pages, 2744300 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
+ 277 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
  228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
