@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  30 MAY 2023 18:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  5 JUN 2023 09:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -630,37 +630,37 @@ File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 ) (final_report.aux)
 \openout1 = `final_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 34.
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 35.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 34.
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
@@ -698,7 +698,7 @@ File: uesint.fd
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 34.
 (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -708,9 +708,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
  (final_report.out) (final_report.out)
 \@outlinefile=\write5
 \openout5 = `final_report.out'.
@@ -743,92 +743,92 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3] [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 143.
+(hyperref)                removing `math shift' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 143.
+(hyperref)                removing `superscript' on input line 142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 143.
+(hyperref)                removing `math shift' on input line 142.
 
 <Figures/Dis3ClusOG.png, id=117, 396.35577pt x 296.60812pt>
 File: Figures/Dis3ClusOG.png Graphic file (type png)
 <use Figures/Dis3ClusOG.png>
-Package pdftex.def Info: Figures/Dis3ClusOG.png  used on input line 147.
+Package pdftex.def Info: Figures/Dis3ClusOG.png  used on input line 146.
 (pdftex.def)             Requested size: 234.8775pt x 175.7712pt.
 <Figures/Dis3ClusKNN.png, id=120, 395.22656pt x 292.46765pt>
 File: Figures/Dis3ClusKNN.png Graphic file (type png)
 <use Figures/Dis3ClusKNN.png>
-Package pdftex.def Info: Figures/Dis3ClusKNN.png  used on input line 158.
+Package pdftex.def Info: Figures/Dis3ClusKNN.png  used on input line 157.
 (pdftex.def)             Requested size: 223.13649pt x 165.11957pt.
 <Figures/Dis3ClusProx.png, id=121, 402.37828pt x 289.08pt>
 File: Figures/Dis3ClusProx.png Graphic file (type png)
 <use Figures/Dis3ClusProx.png>
-Package pdftex.def Info: Figures/Dis3ClusProx.png  used on input line 163.
+Package pdftex.def Info: Figures/Dis3ClusProx.png  used on input line 162.
 (pdftex.def)             Requested size: 223.13649pt x 160.30455pt.
 [5 <./Figures/Dis3ClusOG.png>]
 <Figures/Dis3ClusKNNPro.png, id=132, 397.8614pt x 295.47891pt>
 File: Figures/Dis3ClusKNNPro.png Graphic file (type png)
 <use Figures/Dis3ClusKNNPro.png>
-Package pdftex.def Info: Figures/Dis3ClusKNNPro.png  used on input line 177.
+Package pdftex.def Info: Figures/Dis3ClusKNNPro.png  used on input line 176.
 (pdftex.def)             Requested size: 178.50987pt x 132.57202pt.
 <Figures/Dis3ClusKNNReg.png, id=133, 396.35577pt x 293.22047pt>
 File: Figures/Dis3ClusKNNReg.png Graphic file (type png)
 <use Figures/Dis3ClusKNNReg.png>
-Package pdftex.def Info: Figures/Dis3ClusKNNReg.png  used on input line 183.
+Package pdftex.def Info: Figures/Dis3ClusKNNReg.png  used on input line 182.
 (pdftex.def)             Requested size: 178.50987pt x 132.05983pt.
  [6 <./Figures/Dis3ClusKNN.png> <./Figures/Dis3ClusProx.png> <./Figures/Dis3ClusKNNPro.png> <./Figures/Dis3ClusKNNReg.png>]
 <Figures/SpiOg.png, id=151, 446.41782pt x 331.99031pt>
 File: Figures/SpiOg.png Graphic file (type png)
 <use Figures/SpiOg.png>
-Package pdftex.def Info: Figures/SpiOg.png  used on input line 219.
+Package pdftex.def Info: Figures/SpiOg.png  used on input line 218.
 (pdftex.def)             Requested size: 234.8775pt x 174.67238pt.
 <Figures/SpiKNNUni.png, id=153, 451.6875pt x 338.01282pt>
 File: Figures/SpiKNNUni.png Graphic file (type png)
 <use Figures/SpiKNNUni.png>
-Package pdftex.def Info: Figures/SpiKNNUni.png  used on input line 230.
+Package pdftex.def Info: Figures/SpiKNNUni.png  used on input line 229.
 (pdftex.def)             Requested size: 178.50987pt x 133.58838pt.
 <Figures/SpiKNNRBF.png, id=154, 448.29985pt x 334.24875pt>
 File: Figures/SpiKNNRBF.png Graphic file (type png)
 <use Figures/SpiKNNRBF.png>
-Package pdftex.def Info: Figures/SpiKNNRBF.png  used on input line 236.
+Package pdftex.def Info: Figures/SpiKNNRBF.png  used on input line 235.
 (pdftex.def)             Requested size: 178.50987pt x 133.09529pt.
 <Figures/SpiProx.png, id=155, 448.67625pt x 333.87234pt>
 File: Figures/SpiProx.png Graphic file (type png)
 <use Figures/SpiProx.png>
-Package pdftex.def Info: Figures/SpiProx.png  used on input line 242.
+Package pdftex.def Info: Figures/SpiProx.png  used on input line 241.
 (pdftex.def)             Requested size: 178.50987pt x 132.83334pt.
 <Figures/SpiKNNUniPro.png, id=159, 452.0639pt x 331.99031pt>
 File: Figures/SpiKNNUniPro.png Graphic file (type png)
 <use Figures/SpiKNNUniPro.png>
-Package pdftex.def Info: Figures/SpiKNNUniPro.png  used on input line 253.
+Package pdftex.def Info: Figures/SpiKNNUniPro.png  used on input line 252.
 (pdftex.def)             Requested size: 178.50987pt x 131.09166pt.
 <Figures/SpiKNNUniReg.png, id=160, 453.19313pt x 333.11954pt>
 File: Figures/SpiKNNUniReg.png Graphic file (type png)
 <use Figures/SpiKNNUniReg.png>
-Package pdftex.def Info: Figures/SpiKNNUniReg.png  used on input line 259.
+Package pdftex.def Info: Figures/SpiKNNUniReg.png  used on input line 258.
 (pdftex.def)             Requested size: 178.50987pt x 131.21225pt.
 <Figures/SpiKNNRBFPro.png, id=161, 447.92343pt x 335.00156pt>
 File: Figures/SpiKNNRBFPro.png Graphic file (type png)
 <use Figures/SpiKNNRBFPro.png>
-Package pdftex.def Info: Figures/SpiKNNRBFPro.png  used on input line 265.
+Package pdftex.def Info: Figures/SpiKNNRBFPro.png  used on input line 264.
 (pdftex.def)             Requested size: 178.50987pt x 133.50241pt.
 <Figures/SpiKNNRBFReg.png, id=162, 450.55829pt x 333.87234pt>
 File: Figures/SpiKNNRBFReg.png Graphic file (type png)
 <use Figures/SpiKNNRBFReg.png>
-Package pdftex.def Info: Figures/SpiKNNRBFReg.png  used on input line 271.
+Package pdftex.def Info: Figures/SpiKNNRBFReg.png  used on input line 270.
 (pdftex.def)             Requested size: 178.50987pt x 132.27805pt.
 <Figures/SpiProxPro.png, id=163, 450.9347pt x 333.11954pt>
 File: Figures/SpiProxPro.png Graphic file (type png)
 <use Figures/SpiProxPro.png>
-Package pdftex.def Info: Figures/SpiProxPro.png  used on input line 277.
+Package pdftex.def Info: Figures/SpiProxPro.png  used on input line 276.
 (pdftex.def)             Requested size: 178.50987pt x 131.87303pt.
 <Figures/SpiProxReg.png, id=164, 448.29985pt x 332.74312pt>
 File: Figures/SpiProxReg.png Graphic file (type png)
 <use Figures/SpiProxReg.png>
-Package pdftex.def Info: Figures/SpiProxReg.png  used on input line 283.
+Package pdftex.def Info: Figures/SpiProxReg.png  used on input line 282.
 (pdftex.def)             Requested size: 178.50987pt x 132.49576pt.
  [7] [8 <./Figures/SpiOg.png> <./Figures/SpiKNNUni.png> <./Figures/SpiKNNRBF.png> <./Figures/SpiProx.png>] [9 <./Figures/SpiKNNUniPro.png> <./Figures/SpiKNNUniReg.png> <./Figures/SpiKNNRBFPro.png> <./Figures/SpiKNNRBFReg.png> <./Figures/SpiProxPro.png> <./Figures/SpiProxReg.png>] (final_report.bbl
 Underfull \vbox (badness 2213) has occurred while \output is active []

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex final_report"] 1685496726 "final_report.aux" "final_report.bbl" "final_report" 1685497563
+["bibtex final_report"] 1685496726 "final_report.aux" "final_report.bbl" "final_report" 1685983313
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291868336 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "bibliography_file.bib" 1684518010 5104 5585b623d9ccde439d1795696c7585cb ""
-  "final_report.aux" 1685497562 10289 158b32d9f499b77e5cdc3fe86e96c9ef "pdflatex"
+  "final_report.aux" 1685983313 10289 158b32d9f499b77e5cdc3fe86e96c9ef "pdflatex"
   (generated)
   "final_report.bbl"
   "final_report.blg"
-["pdflatex"] 1685497558 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Report/final_report.tex" "final_report.pdf" "final_report" 1685497563
+["pdflatex"] 1685983308 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Report/final_report.tex" "final_report.pdf" "final_report" 1685983313
   "C:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1685394249 115518 12727708efe1103296e4191777be1d34 ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi720/esint10.pk" 1665803166 13864 d56eaf6d45ccdf93472050f5b3d89612 ""
@@ -219,11 +219,11 @@
   "Figures/SpiProxPro.png" 1684517253 173365 4255a2cb0ffd1a5973f1fb66da589134 ""
   "Figures/SpiProxReg.png" 1684517253 180249 75fe1f2d34334b43521585c20d0e7d6c ""
   "c:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
-  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Report/final_report.tex" 1685497557 23942 0a6f638299db0a36c00a53aa07d1e43c ""
-  "final_report.aux" 1685497562 10289 158b32d9f499b77e5cdc3fe86e96c9ef "pdflatex"
+  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH563_gls/Final Report/final_report.tex" 1685983306 23919 4623a6825c0ce7a076fbc9226e584abb ""
+  "final_report.aux" 1685983313 10289 158b32d9f499b77e5cdc3fe86e96c9ef "pdflatex"
   "final_report.bbl" 1685496726 629 28174ef0c6c176c54e6be54fd67c01ef "bibtex final_report"
-  "final_report.out" 1685497562 2721 b154ee3fcaeda378c3c5076a7ce6e786 "pdflatex"
-  "final_report.tex" 1685497557 23942 0a6f638299db0a36c00a53aa07d1e43c ""
+  "final_report.out" 1685983313 2721 b154ee3fcaeda378c3c5076a7ce6e786 "pdflatex"
+  "final_report.tex" 1685983306 23919 4623a6825c0ce7a076fbc9226e584abb ""
   "macros.sty" 1685240391 2460 9abcdf248d222a1e7715971e2425a289 ""
   (generated)
   "final_report.aux"
